@@ -1,0 +1,666 @@
+/*  - - - - - - - - MAIN BODY
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+html {
+    font-size: 100%; /* all font sizes and rems scale from here */
+    line-height: 1.375;
+}
+
+@media screen and (min-width: 18em) {
+    html {
+        font-size: 101%; /* all font sizes and rems scale from here */
+    }
+}
+
+@media screen and (min-width: 30em) {
+    html {
+        font-size: 110%; /* all font sizes and rems scale from here */
+    }
+}
+
+@media screen and (min-width: 35em) {
+    html {
+        font-size: 125%; /* all font sizes and rems scale from here */
+    }
+}
+
+body {
+    color: #000000;
+    font-family: Verdana, sans-serif;
+    letter-spacing: -0.02em;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: linear-gradient(0deg, #FFD8D8, #DFD8FF, #D8FFF8, #DAFFD8);
+    background-size: 100% 100%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+}
+
+/* background animation */
+/*@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}*/
+
+.content {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+hr {
+    border-top: 1px dashed #8c8b8b;
+    border-bottom: 1px dashed #fff;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+}
+/*  - - - - - - - - HEADER
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.site-title {
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.site-header {
+    /*background: #DAFFD8;*/
+    padding: 0.1em 0 0 0;
+}
+
+.site-title {
+    line-height: 1em;
+    margin: 0 0 0.1em 0;
+    position: relative;
+    z-index: 3;
+    text-align: center;
+}
+
+.site-title a {
+    color: #004204;
+    font-size: 0.8em;
+    padding: 0;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+}
+
+.site-title a:hover {
+    color: #000000;
+    font-size: 0.8em;
+    padding: 0;
+    text-decoration: underline;
+}
+
+.header-wrap {
+    margin: 0 auto;
+    max-width: 51.8em;
+}
+
+@media screen and (min-width: 37em) {
+
+.header-wrap {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(14.285714286%, 7.4em));
+}
+
+.site-title {
+    grid-column: 1 / 7;
+}
+
+.site-title a {
+    padding-left: 0;
+    padding-right: 0;
+}
+}
+
+/*  - - - - - - - - TOP NAVIGATION BAR - MENU
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+nav {
+    text-align: center;
+}
+
+.skip-link {
+    display: block;
+    padding: 0.25em 1em;
+    position: absolute;
+    right: 0;
+    top: -10em;
+    z-index: 3;
+}
+
+/* Add a black background color to the top navigation */
+nav {
+    background-color: #545454;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+nav a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 1.0em;
+    padding: 0.3em;
+    display: block;
+    margin: 0.2em;
+}
+
+/* Change the color of links on hover */
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+    text-decoration: underline;
+}
+
+/* Add a color to the active/current link */
+    nav a.active {
+        background-color: #DAFFD8;
+        color: #000000;
+        text-decoration: underline dotted;
+    }
+
+/* MENU levels visibility and appearance */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #545454;
+}
+
+nav li {
+    display: inline-block;
+}
+
+
+/*  - - - - - - - - HOME PAGE CONTENT
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.home {
+    text-align: center;
+}
+
+.home ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.home h1 {
+    font-size: 2em;
+}
+
+.home h2 {
+    font-size: 1.2em;
+}
+
+/*  - - - - - - - - FOOTER CONTENT - Fixed to stay under the page content at the bottom
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+footer {
+    width: 100%;
+    background-color: #545454;
+    color: #000000;
+    font-family: Verdana, sans-serif;
+    letter-spacing: -0.02em;
+    padding: 0.1em;
+    text-align: center;
+    font-size: 0.8em;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/*  - - - - - - - - ABOUT PAGE CONTENT
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.about {
+    text-align: left;
+}
+
+/*  - - - - - - - - RESUME PAGE CONTENT
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*
+.resume{
+	background-color: #f1f1f1;
+}
+
+/*  - - - - - - - - Button LINK  - - - - - - - - - - - - - */
+.button {
+    padding: 0.7em;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.button a {
+	background: #ccc;
+	color: #000000;
+	text-align: center;
+	padding: 0.3em 0.3em;
+	text-decoration: none;
+	font-size: 1.0em;
+	display: inline-block;
+	border: none;
+	border-radius: 0.2em;
+	cursor: pointer;
+}
+
+.button a:hover {
+	background-color: #ddd;
+	color: black;
+	text-decoration: underline;
+}
+
+/*  - - - - - - - - RESUME SECTIONS  - - - - - - - - - - - - - */
+section {
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.clear {
+    clear: both;
+}
+
+.sectionTitle {
+    float: left;
+    width: 25%;
+}
+
+.sectionContent {
+    float: right;
+    width: 72.5%;
+    /*background-color: #f1f1f1;*/
+    text-align: left;
+}
+
+.sectionTitle h1 {
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-size: 1.2em;
+    color: #000000;
+    text-align: center;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+}
+
+.sectionContent h2 {
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    margin-bottom: -0.1em;
+    /*	background-color: #f1f1f1;	*/
+}
+
+.subDetails {
+    font-size: 0.8em;
+    font-style: italic;
+    margin-bottom: 0.1em;
+    /*	background-color: #f1f1f1;*/
+}
+
+.keySkills {
+    list-style-type: none;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: #444;
+    text-align: left;
+}
+
+    .keySkills ul li {
+        margin-bottom: 0.1em;
+    }
+
+article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    /*background-color: #f1f1f1;*/
+    padding: 10px;
+}
+
+
+@media all and (min-width: 602px) and (max-width: 800px) {
+
+    .sectionTitle, .sectionContent {
+        float: none;
+        width: 100%;
+    }
+
+    .keySkills {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media all and (max-width: 601px) {
+
+    .sectionTitle, .sectionContent {
+        float: none;
+        width: 100%;
+    }
+
+    .sectionTitle {
+        margin-left: -2px;
+        font-size: 1.25em;
+    }
+
+    .keySkills {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media all and (max-width: 480px) {
+
+    section {
+        padding: 15px 0 0;
+    }
+
+    .keySkills {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+/*  - - - - - - - - PORTFOLIO - CONTENT
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.portfolio {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.projectTitle {
+    float: left;
+    width: 48%;
+}
+
+.projectLastUpdated {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.projectWorkFor {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+@media all and (min-width: 602px) and (max-width: 800px) {
+    .projectTitle {
+        width: 100%;
+    }
+
+    .projectLastUpdated {
+        width: 100%;
+    }
+
+    .projectWorkFor {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 601px) {
+
+    .projectTitle {
+        width: 100%;
+    }
+
+    .projectLastUpdated {
+        width: 100%;
+    }
+
+    .projectWorkFor {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .projectTitle {
+        width: 100%;
+    }
+
+    .projectLastUpdated {
+        width: 100%;
+    }
+
+    .projectWorkFor {
+        width: 100%;
+    }
+}
+
+/*  - - - - - - - - PUBLICATION - CONTENT
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*Formatting from Portfoglio used given the similarify of the content*/
+
+/*  - - - - - - - - PROJECTS - CONTENT
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.video {
+    padding: 0.1em;
+    text-align: left;
+}
+
+pre, code {
+    font-family: monospace, monospace;
+}
+
+pre {
+    overflow: auto;
+}
+
+    pre > code {
+        display: block;
+        padding: 1rem;
+        word-wrap: normal;
+    }
+
+/*  - - - - - - - - CONTACT - CONTENT
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 1em; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 0.2em; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 0.2em; /* Add a top margin */
+    margin-bottom: 0.2em; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background: #ccc;
+    color: #000000;
+    text-align: center;
+    padding: 0.3em 0.3em;
+    text-decoration: none;
+    font-size: 1em;
+    display: inline-block;
+    border: none;
+    border-radius: 0.2em;
+    cursor: pointer;
+}
+
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+/* Add a background color and some padding around the form */
+.contact {
+    border-radius: 0.1em;
+    padding: 1em;
+}
+
+/*  - - - - - - - - BLOG - CONTENT
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.signature {
+    text-align: right;
+    font: italic;
+}
+
+.blogPost {
+    text-align: left;
+    padding: 0.1em; /* Some padding */
+}
+
+/*  - - - - - - - - GO BACK BUTTON  - - - - - - - - - - - - - */
+button {
+    padding: 0.7em;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+button {
+    background: #ccc;
+    color: #000000;
+    text-align: center;
+    padding: 0.3em 0.3em;
+    text-decoration: none;
+    font-size: 1.0em;
+    display: inline-block;
+    border: none;
+    border-radius: 0.2em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+    color: black;
+    text-decoration: underline;
+}
+
+/*  - - - - - - - - IMAGE, VIDEO, ICON  - - - - - - - - - - - - - */
+img {
+    border: 0.1em;
+    min-width: 50px;
+    min-height: auto;
+}
+
+@media all and (min-width: 602px) and (max-width: 800px) {
+    figure {
+        width: 100%;
+    }
+    
+    img {
+        border: 0.1em;
+        min-width: 100px;
+    }
+
+    figcaption {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 601px) {
+
+    figure {
+        width: 100%;
+    }
+
+    img {
+        border: 0.1em;
+        min-width: 100px;
+    }
+
+    figcaption {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 480px) {
+
+    figure {
+        width: 100%;
+    }
+
+    img {
+        border: 0.1em;
+        min-width: 100%;
+    }
+
+    figcaption {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media print {
+    /* This media query only applies itself to the page during printing */
+    header, footer, nav, .button, iframe {
+        display: none !important;
+    }
+
+    body, main {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content{
+        width:100%;
+    }
+}
+
+/*  - - - - - - - - Logo  - - - - - - - - - - - - - */
+
+#Mycanvas {
+    height: 100%;
+    width: 100%;
+    background: black;
+}
