@@ -88,21 +88,20 @@ body {
 
 @media all and (min-width: 602px) and (max-width: 800px) {
  .stars {
-	box-shadow: 119vw 46vh 0 1px rgba(255, 255, 255, 0.1), 17vw 47vh 0 1px rgba(255, 255, 255, 0.3), 40vw 86vh 0 1px rgba(255, 255, 255, 0.1), 20vw 20vh 0 1px rgba(255, 255, 255, 0.1), 190vw 10vh 0 1px rgba(255, 255, 255, 0.1), 10vw 86vh 0 1px rgba(255, 255, 255, 0.1), 150vw 26vh 0 1px rgba(255, 255, 255, 0.1);
+	box-shadow: 119vw 46vh 0 1px rgba(255, 255, 255, 0.1), 17vw 47vh 0 1px rgba(255, 255, 255, 0.3), 40vw 86vh 0 1px rgba(255, 255, 255, 0.1), 20vw 20vh 0 1px rgba(255, 255, 255, 0.1), 190vw 10vh 0 1px rgba(255, 255, 255, 0.1), 10vw 86vh 0 1px rgba(255, 255, 255, 0.1), 150vw 26vh 0 1px rgba(255, 255, 255, 0.1), 90vw 30vh 0 1px rgba(255, 255, 255, 0.1),80vw 130vh 0 1px rgba(255, 255, 255, 0.1);
 	}
 }
 
 @media all and (max-width: 601px) {
  .stars {
-	box-shadow: 119vw 46vh 0 1px rgba(255, 255, 255, 0.1), 17vw 47vh 0 1px rgba(255, 255, 255, 0.3), 40vw 86vh 0 1px rgba(255, 255, 255, 0.1), 20vw 20vh 0 1px rgba(255, 255, 255, 0.1), 190vw 10vh 0 1px rgba(255, 255, 255, 0.1), 10vw 86vh 0 1px rgba(255, 255, 255, 0.1), 150vw 26vh 0 1px rgba(255, 255, 255, 0.1);
+	box-shadow: 119vw 46vh 0 1px rgba(255, 255, 255, 0.1), 17vw 47vh 0 1px rgba(255, 255, 255, 0.3), 40vw 86vh 0 1px rgba(255, 255, 255, 0.1), 20vw 20vh 0 1px rgba(255, 255, 255, 0.1), 190vw 10vh 0 1px rgba(255, 255, 255, 0.1), 10vw 86vh 0 1px rgba(255, 255, 255, 0.1), 150vw 26vh 0 1px rgba(255, 255, 255, 0.1), 90vw 30vh 0 1px rgba(255, 255, 255, 0.1),80vw 130vh 0 1px rgba(255, 255, 255, 0.1);	
 	}
 }
 
 @media all and (max-width: 480px) {
     .stars {
-	box-shadow: 119vw 46vh 0 1px rgba(255, 255, 255, 0.1), 17vw 47vh 0 1px rgba(255, 255, 255, 0.3), 40vw 86vh 0 1px rgba(255, 255, 255, 0.1), 20vw 20vh 0 1px rgba(255, 255, 255, 0.1), 190vw 10vh 0 1px rgba(255, 255, 255, 0.1), 10vw 86vh 0 1px rgba(255, 255, 255, 0.1), 150vw 26vh 0 1px rgba(255, 255, 255, 0.1);
+	box-shadow: 119vw 46vh 0 1px rgba(255, 255, 255, 0.1), 17vw 47vh 0 1px rgba(255, 255, 255, 0.3), 40vw 86vh 0 1px rgba(255, 255, 255, 0.1), 20vw 20vh 0 1px rgba(255, 255, 255, 0.1), 190vw 10vh 0 1px rgba(255, 255, 255, 0.1), 10vw 86vh 0 1px rgba(255, 255, 255, 0.1), 150vw 26vh 0 1px rgba(255, 255, 255, 0.1), 90vw 30vh 0 1px rgba(255, 255, 255, 0.1),80vw 130vh 0 1px rgba(255, 255, 255, 0.1);	
 	}
-
 }
 
 .content {
