@@ -271,12 +271,17 @@ nav li {
 }
 
     .home ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        position: relative;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: display;
+		position: relative;
     }
+	.home li {
+		display: inline-block;
+		border-bottom: 2px #FFFFFF dashed;
+		position:relative;
+	}
 
     .home h1 {
         font-size: 2em;
@@ -643,7 +648,7 @@ input[type=submit] {
     padding: 0.1em; /* Some padding */
 }
 
-/*  - - - - - - - - IMAGE, VIDEO, ICON  - - - - - - - - - - - - - */
+/*  - - - - - - - - IMAGE, VIDEO - - - - - - - - - - - - - */
 img {
     border: 0.1em;
 	border: solid;
