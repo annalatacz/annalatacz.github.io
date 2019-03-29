@@ -274,7 +274,6 @@ nav li {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
-		overflow: display;
 		position: relative;
     }
 	.home li {
@@ -376,7 +375,6 @@ section {
     font-size: 1.2em;
     color: #FFFFFF;
     text-align: center;
-    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
 }
 
 .sectionContent h2 {
