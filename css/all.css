@@ -109,6 +109,28 @@ body {
     margin: 0 auto;
 }
 
+
+@media all and (min-width: 602px) and (max-width: 800px) {
+	.content {
+	max-width: 80%;
+	margin: 0 auto;
+	}
+}
+
+@media all and (max-width: 601px) {
+.content {
+    max-width: 90%;
+    margin: 0 auto;
+}
+}
+
+@media all and (max-width: 480px) {
+.content {
+    max-width: 95%;
+    margin: 0 auto;
+}
+}
+
 hr {
     border-top: 1px dashed #FFFFFF;
     border-bottom: 1px dashed #FFFFFF;
@@ -724,5 +746,7 @@ img {
 	
     .content{
         overflow: visible;
+		max-width: 100%;
+		margin: 0 auto;
     }
 }
