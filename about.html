@@ -6,11 +6,12 @@
     <meta name="author" content="Anna Latacz" />
     <meta name="description" content="About - Anna Latacz" />
     <meta name="keywords" content="Anna, Latacz, about page" />
-    <title>Anna Latacz</title>
     <!-- CSS script files -->
     <link rel="stylesheet" type="text/css" href="css/all.css" />
+    <title>Anna Latacz</title>
 </head>
 <body>
+    <div class="stars"></div>
     <header class="site-header">
         <div class="header-wrap">
             <div class="site-title">
@@ -47,7 +48,7 @@
     <main id="main">
         <div class="content">
             <div class="about">
-            <h1>About this website</h1>
+                <h1>About this website</h1>
                 <section>
                     <h2>Technologies used:</h2>
                     <article>
@@ -55,8 +56,14 @@
                         <p>The site had been written in html 5 as per requirements. The elements had been chosen on a fit-for-purpose basis and are self explanatory (based on the names of the sections used in the main navigation bar).</p>
                     </article><article>
                         <h3>CSS</h3>
-                        <p>The site uses CSS. All files are located in the css folder. There is one general file for style of the website and specifc files for other elements that are located on the subpages e.g. contact form has its own style.</p>
-                        <p>The not-trivial use of CSS is illustrated by: (PROVIDE EXAMPLE FROM THE PROJECT).</p>
+                        <p>The site uses CSS. All files are located in the css folder. There is one general file for style of the website. Given research on websites available in the internet I was not sure what exactly classifies as non-trivial use of CSS so I used it for several things:</p>
+						<ul>
+                            <li>General styling of the website (fonts, indents etc.).</li>
+                            <li>Ensuring website is mobile and small screen friendly and responsive.</li>
+							<li>Provide printing format (with exclusion of unnecessary elements like menu).</li>
+							<li>Background creation - My version is a night sky with stars. It required creative use of the gradient background and box-shadow attribute. As only CSS was mentioned I focused on the static generation of stars (instead of using SCSS etc.). 
+							Originally I was thinking about enhancing sky with the animation of the stars and/or gradient but during testing a few people mentioned that they got a bit "sea sick" so I dropped the idea.</li>
+                        </ul>
                     </article><article>
                         <h3>JavaScript</h3>
                         <p>PROVIDE EXAMPLE WHERE AND WHAT IT DOES!!!!</p>
@@ -76,15 +83,15 @@
                     <article>
                         <h3>Disabled compatibility</h3>
                         <p>Site had been designed taking into consideration possible disabled users. Some of the things that were taken into account:</p>
-                            <ul>
-                                <li>high contrasting colours for links and text</li>
-                                <li>non-colour indications of the possition on the site: active links are underlined with dotted line, links over which the user is hoovering are underlined with 1 line</li>
-                                <li>appropriate use of sections and articles (including headers) for easier readability</li>
-                                <li>skip link for the menu</li>
-                                <li>header of each page indicating where the user is</li>
-                                <li>big fonts and easy to read spacing (no justify that would change it and confuse reading software)</li>
-                            </ul>
-                        <p>Site had been tested using WAVE web accessibility evaluation tool with success.</p>
+                        <ul>
+                            <li>High contrasting colours for links and text (used https://contrastchecker.com/) and all foreground/background ratios are over 11 (which is way bigger contrast than recommened 4.5:1 ratio).</li>
+                            <li>Non-colour indications of the possition on the site using cursor, or changes made to the button or link when user hovers or clicks on them.</li>
+                            <li>Appropriate use of sections and articles (including headers) for ease of use screen readers.</li>
+                            <li>Skip link for the menu.</li>
+                            <li>Header of each page indicating where the user is.</li>
+                            <li>Big fonts and easy to read spacing (no justify that would change it and confuse reading software).</li>
+                        </ul>
+                        <p>Site had been tested using WAVE web accessibility evaluation tool.</p>
                     </article>
                     <article>
                         <h3>Project Description Page</h3>
@@ -93,19 +100,24 @@
                     <article>
                         <h3>MENU</h3>
                         <p>
-                            Menu is in the form of a navigation bar at the top of the website. As I was not sure concerning how complex menu should be (the project specification was not clear on that point) I decided to create enought pages to demonstrate a 2 level solution.
-                            For this website there was no need to create anything more complicated as it would have made the site unreadable.
+                            Menu is in the form of a navigation bar at the top of the website. As I was not sure concerning how complex menu should be (the project specification was not clear on that point) I decided to create enought pages to demonstrate a 2 level solution: 
+							main menu on top of the pages and 2 sub-pages used for listing of projects and publications that are used as sub-menus for those specific sections. For this website there was no need to create anything more complicated as it would have made the site unreadable.
                         </p>
                     </article>
                     <article>
                         <h3>Readability</h3>
                         <p>The readability of the page is good. There is no non-readable content, too small or too big elements, poor contrast between elements etc.</p>
                     </article>
+					<article>
+					<h3>Additional information</h3>
+                        <p>I am going to use this website as my personal portfoglio as a developer thus I needed the contact form to work. As this is a static page (and I did not want to set up my own sftp service/server) I used https://formspree.io/. 
+						It is a free service that forwards whatever is in the form to specified email address.</p>
+					</article>
                 </section>
             </div>
         </div>
         <footer>
-        <p>© 2019 Anna Latacz</p>
+            <p>© 2019 Anna Latacz</p>
         </footer>
     </main>
 </body>

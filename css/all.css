@@ -3,83 +3,112 @@
 
 html {
     font-size: 100%; /* all font sizes and rems scale from here */
-    line-height: 1.375;
+    overflow: auto;
+    height:100%;
 }
 
 @media screen and (min-width: 18em) {
     html {
-        font-size: 101%; /* all font sizes and rems scale from here */
+        font-size: 101%;  
     }
 }
 
 @media screen and (min-width: 30em) {
     html {
-        font-size: 110%; /* all font sizes and rems scale from here */
+        font-size: 110%;  
     }
 }
 
 @media screen and (min-width: 35em) {
     html {
-        font-size: 125%; /* all font sizes and rems scale from here */
+        font-size: 125%; 
+    }
+}
+
+/* - - - - - - - - BACKGROUND & ANIMATION  - - - - - - - - - - - - -*/
+				   
+									 
+							
+				
+				 
+				 
+																		  
+							   
+												  
+											   
+										  
+ 
+
+						  
+@-webkit-keyframes html {
+    0% {
+        -webkit-transform: translate(5%, -2%);
+        transform: translate(5%, -2%);
+    }
+
+    25% {
+        -webkit-transform: translate(10%, 7%);
+        transform: translate(10%, 7%);
+    }
+
+    40% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+ 
+
+						  
+    60% {
+        -webkit-transform: translate(7%, -2%);
+        transform: translate(7%, -2%);
+    }
+
+    85% {
+        -webkit-transform: translate(6%, 3%) rotate(12deg);
+        transform: translate(6%, 3%) rotate(12deg);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
     }
 }
 
 body {
-    color: #000000;
+    color: #FFFFFF;
     font-family: Verdana, sans-serif;
     letter-spacing: -0.02em;
+    padding: 0;
+    margin: 0;
     width: 100%;
     height: 100%;
-    margin: auto;
-    background: linear-gradient(0deg, #FFD8D8, #DFD8FF, #D8FFF8, #DAFFD8);
-    background-size: 100% 100%;
-    -webkit-animation: Gradient 15s ease infinite;
-    -moz-animation: Gradient 15s ease infinite;
-    animation: Gradient 15s ease infinite;
+    background: -webkit-linear-gradient(80deg, #2B2F77 25%, #141852 40%, #070B34 85%);
+    background: linear-gradient(10deg, #2B2F77 25%, #141852 40%, #070B34 85%);
+    overflow: auto;
 }
 
-/* background animation */
-/*@-webkit-keyframes Gradient {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
+* {
+    box-sizing: border-box;
 }
 
-@-moz-keyframes Gradient {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    box-shadow: 119vw 46vh 0 1px rgba(255, 255, 255, 0.7), 17vw 47vh 0 2px rgba(255, 255, 255, 0.7), 98vw 35vh 0 1px rgba(255, 255, 255, 0.7), 94vw 25vh 0 1px rgba(255, 255, 255, 0.7), 33vw 46vh 0 1px rgba(255, 255, 255, 0.7), 11vw 5vh 0 2px rgba(255, 255, 255, 0.7), 44vw 47vh 0 2px rgba(255, 255, 255, 0.7), 74vw 4vh 0 2px rgba(255, 255, 255, 0.7), 28vw 18vh 0 2px rgba(255, 255, 255, 0.7), 45vw 45vh 0 1px rgba(255, 255, 255, 0.7), 18vw 26vh 0 1px rgba(255, 255, 255, 0.7), 57vw 44vh 0 2px rgba(255, 255, 255, 0.7), 64vw 28vh 0 2px rgba(255, 255, 255, 0.7), 100vw 17vh 0 1px rgba(255, 255, 255, 0.7), 74vw 36vh 0 1px rgba(255, 255, 255, 0.7), 94vw 16vh 0 1px rgba(255, 255, 255, 0.7), 48vw 34vh 0 2px rgba(255, 255, 255, 0.7), 86vw 5vh 0 2px rgba(255, 255, 255, 0.7), 25vw 7vh 0 1px rgba(255, 255, 255, 0.7), 89vw 34vh 0 1px rgba(255, 255, 255, 0.7), 15vw 32vh 0 2px rgba(255, 255, 255, 0.7), 93vw 25vh 0 2px rgba(255, 255, 255, 0.7), 41vw 9vh 0 2px rgba(255, 255, 255, 0.7), 42vw 36vh 0 1px rgba(255, 255, 255, 0.7), 54vw 23vh 0 1px rgba(255, 255, 255, 0.7), 50vw 46vh 0 1px rgba(255, 255, 255, 0.7), 50vw 19vh 0 2px rgba(255, 255, 255, 0.7), 60vw 40vh 0 1px rgba(255, 255, 255, 0.7), 59vw 4vh 0 2px rgba(255, 255, 255, 0.7), 15vw 23vh 0 2px rgba(255, 255, 255, 0.7), 14vw 38vh 0 1px rgba(255, 255, 255, 0.7), 58vw 41vh 0 1px rgba(255, 255, 255, 0.7), 70vw 7vh 0 1px rgba(255, 255, 255, 0.7), 10vw 25vh 0 1px rgba(255, 255, 255, 0.7), 44vw 33vh 0 1px rgba(255, 255, 255, 0.7), 70vw 37vh 0 2px rgba(255, 255, 255, 0.7), 28vw 33vh 0 1px rgba(255, 255, 255, 0.7), 72vw 7vh 0 2px rgba(255, 255, 255, 0.7), 68vw 34vh 0 1px rgba(255, 255, 255, 0.7), 13vw 17vh 0 2px rgba(255, 255, 255, 0.7), 13vw 7vh 0 2px rgba(255, 255, 255, 0.7), 53vw 36vh 0 1px rgba(255, 255, 255, 0.7), 99vw 24vh 0 1px rgba(255, 255, 255, 0.7), 94vw 23vh 0 2px rgba(255, 255, 255, 0.7), 93vw 38vh 0 1px rgba(255, 255, 255, 0.7), 81vw 18vh 0 2px rgba(255, 255, 255, 0.7), 15vw 33vh 0 1px rgba(255, 255, 255, 0.7), 11vw 29vh 0 1px rgba(255, 255, 255, 0.7), 82vw 23vh 0 1px rgba(255, 255, 255, 0.7), 80vw 32vh 0 1px rgba(255, 255, 255, 0.7), 9vw 2vh 0 2px rgba(255, 255, 255, 0.7), 69vw 2vh 0 1px rgba(255, 255, 255, 0.7), 46vw 39vh 0 1px rgba(255, 255, 255, 0.7), 46vw 15vh 0 1px rgba(255, 255, 255, 0.7), 54vw 48vh 0 1px rgba(255, 255, 255, 0.7), 66vw 34vh 0 1px rgba(255, 255, 255, 0.7), 7vw 42vh 0 2px rgba(255, 255, 255, 0.7), 18vw 17vh 0 1px rgba(255, 255, 255, 0.7), 81vw 14vh 0 2px rgba(255, 255, 255, 0.7), 97vw 16vh 0 1px rgba(255, 255, 255, 0.7), 97vw 8vh 0 2px rgba(255, 255, 255, 0.7), 73vw 35vh 0 2px rgba(255, 255, 255, 0.7), 94vw 7vh 0 2px rgba(255, 255, 255, 0.7), 19vw 41vh 0 2px rgba(255, 255, 255, 0.7), 92vw 38vh 0 2px rgba(255, 255, 255, 0.7), 72vw 2vh 0 2px rgba(255, 255, 255, 0.7), 87vw 45vh 0 2px rgba(255, 255, 255, 0.7), 48vw 45vh 0 1px rgba(255, 255, 255, 0.7), 28vw 11vh 0 1px rgba(255, 255, 255, 0.7), 51vw 50vh 0 2px rgba(255, 255, 255, 0.7), 85vw 2vh 0 2px rgba(255, 255, 255, 0.7), 79vw 39vh 0 1px rgba(255, 255, 255, 0.7), 28vw 4vh 0 2px rgba(255, 255, 255, 0.7), 37vw 11vh 0 2px rgba(255, 255, 255, 0.7), 82vw 34vh 0 2px rgba(255, 255, 255, 0.7), 36vw 48vh 0 1px rgba(255, 255, 255, 0.7), 45vw 46vh 0 1px rgba(255, 255, 255, 0.7), 6vw 44vh 0 2px rgba(255, 255, 255, 0.7), 99vw 11vh 0 2px rgba(255, 255, 255, 0.7), 12vw 46vh 0 1px rgba(255, 255, 255, 0.7), 1vw 3vh 0 1px rgba(255, 255, 255, 0.7), 38vw 34vh 0 1px rgba(255, 255, 255, 0.7), 88vw 4vh 0 1px rgba(255, 255, 255, 0.7), 91vw 17vh 0 1px rgba(255, 255, 255, 0.7), 56vw 34vh 0 2px rgba(255, 255, 255, 0.7), 66vw 6vh 0 1px rgba(255, 255, 255, 0.7), 67vw 41vh 0 1px rgba(255, 255, 255, 0.7), 54vw 34vh 0 2px rgba(255, 255, 255, 0.7), 28vw 17vh 0 1px rgba(255, 255, 255, 0.7), 41vw 17vh 0 2px rgba(255, 255, 255, 0.7), 36vw 22vh 0 1px rgba(255, 255, 255, 0.7), 23vw 2vh 0 1px rgba(255, 255, 255, 0.7), 4vw 9vh 0 1px rgba(255, 255, 255, 0.7), 31vw 23vh 0 2px rgba(255, 255, 255, 0.7), 54vw 26vh 0 2px rgba(255, 255, 255, 0.7), 52vw 14vh 0 1px rgba(255, 255, 255, 0.7), 29vw 45vh 0 1px rgba(255, 255, 255, 0.7), 34vw 45vh 0 2px rgba(255, 255, 255, 0.7), 25vw 19vh 0 1px rgba(255, 255, 255, 0.7), 100vw 43vh 0 1px rgba(255, 255, 255, 0.7), 77vw 46vh 0 0 rgba(255, 255, 255, 0.9), 19vw 70vh 0 1px rgba(255, 255, 255, 0.7), 17vw 87vh 0 2px rgba(255, 255, 255, 0.7), 98vw 95vh 0 1px rgba(255, 255, 255, 0.7), 94vw 85vh 0 1px rgba(255, 255, 255, 0.7), 33vw 70vh 0 1px rgba(255, 255, 255, 0.7), 11vw 55vh 0 2px rgba(255, 255, 255, 0.7), 44vw 67vh 0 2px rgba(255, 255, 255, 0.7), 74vw 84vh 0 2px rgba(255, 255, 255, 0.7), 28vw 68vh 0 2px rgba(255, 255, 255, 0.7), 45vw 85vh 0 1px rgba(255, 255, 255, 0.7), 18vw 56vh 0 1px rgba(255, 255, 255, 0.7), 57vw 64vh 0 2px rgba(255, 255, 255, 0.7), 64vw 78vh 0 2px rgba(255, 255, 255, 0.7), 100vw 87vh 0 1px rgba(255, 255, 255, 0.7), 74vw 66vh 0 1px rgba(255, 255, 255, 0.7), 94vw 66vh 0 1px rgba(255, 255, 255, 0.7), 48vw 74vh 0 2px rgba(255, 255, 255, 0.7), 86vw 95vh 0 2px rgba(255, 255, 255, 0.7), 25vw 57vh 0 1px rgba(255, 255, 255, 0.7), 89vw 84vh 0 1px rgba(255, 255, 255, 0.7), 15vw 72vh 0 2px rgba(255, 255, 255, 0.7), 93vw 65vh 0 2px rgba(255, 255, 255, 0.7), 41vw 89vh 0 2px rgba(255, 255, 255, 0.7), 42vw 66vh 0 1px rgba(255, 255, 255, 0.7), 54vw 53vh 0 1px rgba(255, 255, 255, 0.7), 50vw 96vh 0 1px rgba(255, 255, 255, 0.7), 50vw 89vh 0 2px rgba(255, 255, 255, 0.7), 60vw 80vh 0 1px rgba(255, 255, 255, 0.7), 59vw 64vh 0 2px rgba(255, 255, 255, 0.7), 15vw 53vh 0 2px rgba(255, 255, 255, 0.7), 14vw 88vh 0 1px rgba(255, 255, 255, 0.7), 58vw 71vh 0 1px rgba(255, 255, 255, 0.7), 70vw 77vh 0 1px rgba(255, 255, 255, 0.7), 10vw 65vh 0 1px rgba(255, 255, 255, 0.7), 44vw 83vh 0 1px rgba(255, 255, 255, 0.7), 70vw 57vh 0 2px rgba(255, 255, 255, 0.7), 28vw 63vh 0 1px rgba(255, 255, 255, 0.7), 72vw 87vh 0 2px rgba(255, 255, 255, 0.7), 68vw 94vh 0 1px rgba(255, 255, 255, 0.7), 13vw 77vh 0 2px rgba(255, 255, 255, 0.7), 13vw 67vh 0 2px rgba(255, 255, 255, 0.7), 53vw 56vh 0 1px rgba(255, 255, 255, 0.7), 99vw 84vh 0 1px rgba(255, 255, 255, 0.7), 94vw 83vh 0 2px rgba(255, 255, 255, 0.7), 93vw 68vh 0 1px rgba(255, 255, 255, 0.7), 81vw 58vh 0 2px rgba(255, 255, 255, 0.7), 15vw 93vh 0 1px rgba(255, 255, 255, 0.7), 11vw 89vh 0 1px rgba(255, 255, 255, 0.7), 82vw 73vh 0 1px rgba(255, 255, 255, 0.7), 80vw 62vh 0 1px rgba(255, 255, 255, 0.7), 9vw 72vh 0 2px rgba(255, 255, 255, 0.7), 69vw 82vh 0 1px rgba(255, 255, 255, 0.7), 36vw 69vh 0 1px rgba(255, 255, 255, 0.7), 46vw 75vh 0 1px rgba(255, 255, 255, 0.7), 54vw 88vh 0 1px rgba(255, 255, 255, 0.7), 66vw 54vh 0 1px rgba(255, 255, 255, 0.7), 7vw 72vh 0 2px rgba(255, 255, 255, 0.7), 18vw 67vh 0 1px rgba(255, 255, 255, 0.7), 81vw 94vh 0 2px rgba(255, 255, 255, 0.7), 97vw 56vh 0 1px rgba(255, 255, 255, 0.7), 97vw 68vh 0 2px rgba(255, 255, 255, 0.7), 73vw 75vh 0 2px rgba(255, 255, 255, 0.7), 94vw 87vh 0 2px rgba(255, 255, 255, 0.7), 19vw 41vh 0 2px rgba(255, 255, 255, 0.7), 92vw 38vh 0 2px rgba(255, 255, 255, 0.7), 72vw 82vh 0 2px rgba(255, 255, 255, 0.7), 87vw 95vh 0 2px rgba(255, 255, 255, 0.7), 48vw 75vh 0 1px rgba(255, 255, 255, 0.7), 28vw 61vh 0 1px rgba(255, 255, 255, 0.7), 51vw 70vh 0 2px rgba(255, 255, 255, 0.7), 85vw 62vh 0 2px rgba(255, 255, 255, 0.7), 79vw 79vh 0 1px rgba(255, 255, 255, 0.7), 28vw 74vh 0 2px rgba(255, 255, 255, 0.7), 37vw 11vh 0 2px rgba(255, 255, 255, 0.7), 82vw 84vh 0 2px rgba(255, 255, 255, 0.7), 36vw 58vh 0 1px rgba(255, 255, 255, 0.7), 45vw 76vh 0 1px rgba(255, 255, 255, 0.7), 6vw 84vh 0 2px rgba(255, 255, 255, 0.7), 99vw 91vh 0 2px rgba(255, 255, 255, 0.7), 12vw 66vh 0 1px rgba(255, 255, 255, 0.7), 1vw 73vh 0 1px rgba(255, 255, 255, 0.7), 38vw 74vh 0 1px rgba(255, 255, 255, 0.7), 88vw 64vh 0 1px rgba(255, 255, 255, 0.7), 91vw 97vh 0 1px rgba(255, 255, 255, 0.7), 56vw 84vh 0 2px rgba(255, 255, 255, 0.7), 66vw 66vh 0 1px rgba(255, 255, 255, 0.7), 67vw 71vh 0 1px rgba(255, 255, 255, 0.7), 54vw 54vh 0 2px rgba(255, 255, 255, 0.7), 28vw 77vh 0 1px rgba(255, 255, 255, 0.7), 41vw 67vh 0 2px rgba(255, 255, 255, 0.7), 36vw 82vh 0 1px rgba(255, 255, 255, 0.7), 23vw 92vh 0 1px rgba(255, 255, 255, 0.7), 4vw 79vh 0 1px rgba(255, 255, 255, 0.7), 31vw 63vh 0 2px rgba(255, 255, 255, 0.7), 54vw 86vh 0 2px rgba(255, 255, 255, 0.7), 52vw 74vh 0 1px rgba(255, 255, 255, 0.7), 29vw 95vh 0 1px rgba(255, 255, 255, 0.7), 34vw 95vh 0 2px rgba(255, 255, 255, 0.7), 25vw 69vh 0 1px rgba(255, 255, 255, 0.7), 100vw 83vh 0 1px rgba(255, 255, 255, 0.7), 77vw 66vh 0 0 rgba(255, 255, 255, 0.9);
 }
 
-@keyframes Gradient {
-    0% {
-        background-position: 0% 50%
+@media all and (max-width: 480px) {
+    .stars {
+        box-shadow: 119vw 46vh 0 1px rgba(255, 255, 255, 0.7), 98vw 35vh 0 1px rgba(255, 255, 255, 0.7), 33vw 46vh 0 1px rgba(255, 255, 255, 0.7), 74vw 4vh 0 2px rgba(255, 255, 255, 0.7), 45vw 45vh 0 1px rgba(255, 255, 255, 0.7), 57vw 44vh 0 2px rgba(255, 255, 255, 0.7), 100vw 17vh 0 1px rgba(255, 255, 255, 0.7), 74vw 36vh 0 1px rgba(255, 255, 255, 0.7), 94vw 16vh 0 1px rgba(255, 255, 255, 0.7), 48vw 34vh 0 2px rgba(255, 255, 255, 0.7), 86vw 5vh 0 2px rgba(255, 255, 255, 0.7), 25vw 7vh 0 1px rgba(255, 255, 255, 0.7), 89vw 34vh 0 1px rgba(255, 255, 255, 0.7), 93vw 25vh 0 2px rgba(255, 255, 255, 0.7), 41vw 9vh 0 2px rgba(255, 255, 255, 0.7), 42vw 36vh 0 1px rgba(255, 255, 255, 0.7), 54vw 23vh 0 1px rgba(255, 255, 255, 0.7), 50vw 46vh 0 1px rgba(255, 255, 255, 0.7), 50vw 19vh 0 2px rgba(255, 255, 255, 0.7), 60vw 40vh 0 1px rgba(255, 255, 255, 0.7), 59vw 4vh 0 2px rgba(255, 255, 255, 0.7), 15vw 23vh 0 2px rgba(255, 255, 255, 0.7), 14vw 38vh 0 1px rgba(255, 255, 255, 0.7), 58vw 41vh 0 1px rgba(255, 255, 255, 0.7), 70vw 7vh 0 1px rgba(255, 255, 255, 0.7), 10vw 25vh 0 1px rgba(255, 255, 255, 0.7), 44vw 33vh 0 1px rgba(255, 255, 255, 0.7), 70vw 37vh 0 2px rgba(255, 255, 255, 0.7), 28vw 33vh 0 1px rgba(255, 255, 255, 0.7), 72vw 7vh 0 2px rgba(255, 255, 255, 0.7), 68vw 34vh 0 1px rgba(255, 255, 255, 0.7), 13vw 17vh 0 2px rgba(255, 255, 255, 0.7), 13vw 7vh 0 2px rgba(255, 255, 255, 0.7), 53vw 36vh 0 1px rgba(255, 255, 255, 0.7), 94vw 23vh 0 2px rgba(255, 255, 255, 0.7), 81vw 18vh 0 2px rgba(255, 255, 255, 0.7), 15vw 33vh 0 1px rgba(255, 255, 255, 0.7), 11vw 29vh 0 1px rgba(255, 255, 255, 0.7), 82vw 23vh 0 1px rgba(255, 255, 255, 0.7), 80vw 32vh 0 1px rgba(255, 255, 255, 0.7), 9vw 2vh 0 2px rgba(255, 255, 255, 0.7), 69vw 2vh 0 1px rgba(255, 255, 255, 0.7), 46vw 39vh 0 1px rgba(255, 255, 255, 0.7), 46vw 15vh 0 1px rgba(255, 255, 255, 0.7), 54vw 48vh 0 1px rgba(255, 255, 255, 0.7), 66vw 34vh 0 1px rgba(255, 255, 255, 0.7), 7vw 42vh 0 2px rgba(255, 255, 255, 0.7), 18vw 17vh 0 1px rgba(255, 255, 255, 0.7), 81vw 14vh 0 2px rgba(255, 255, 255, 0.7), 97vw 16vh 0 1px rgba(255, 255, 255, 0.7), 97vw 8vh 0 2px rgba(255, 255, 255, 0.7), 94vw 7vh 0 2px rgba(255, 255, 255, 0.7), 19vw 41vh 0 2px rgba(255, 255, 255, 0.7), 72vw 2vh 0 2px rgba(255, 255, 255, 0.7), 87vw 45vh 0 2px rgba(255, 255, 255, 0.7), 48vw 45vh 0 1px rgba(255, 255, 255, 0.7), 51vw 50vh 0 2px rgba(255, 255, 255, 0.7), 85vw 2vh 0 2px rgba(255, 255, 255, 0.7), 28vw 4vh 0 2px rgba(255, 255, 255, 0.7), 37vw 11vh 0 2px rgba(255, 255, 255, 0.7), 82vw 34vh 0 2px rgba(255, 255, 255, 0.7), 36vw 48vh 0 1px rgba(255, 255, 255, 0.7), 45vw 46vh 0 1px rgba(255, 255, 255, 0.7), 6vw 44vh 0 2px rgba(255, 255, 255, 0.7), 99vw 11vh 0 2px rgba(255, 255, 255, 0.7), 12vw 46vh 0 1px rgba(255, 255, 255, 0.7), 1vw 3vh 0 1px rgba(255, 255, 255, 0.7), 38vw 34vh 0 1px rgba(255, 255, 255, 0.7), 88vw 4vh 0 1px rgba(255, 255, 255, 0.7), 91vw 17vh 0 1px rgba(255, 255, 255, 0.7), 56vw 34vh 0 2px rgba(255, 255, 255, 0.7), 54vw 34vh 0 2px rgba(255, 255, 255, 0.7), 28vw 17vh 0 1px rgba(255, 255, 255, 0.7), 41vw 17vh 0 2px rgba(255, 255, 255, 0.7), 36vw 22vh 0 1px rgba(255, 255, 255, 0.7), 4vw 9vh 0 1px rgba(255, 255, 255, 0.7), 31vw 23vh 0 2px rgba(255, 255, 255, 0.7), 54vw 26vh 0 2px rgba(255, 255, 255, 0.7), 52vw 14vh 0 1px rgba(255, 255, 255, 0.7), 29vw 45vh 0 1px rgba(255, 255, 255, 0.7), 34vw 45vh 0 2px rgba(255, 255, 255, 0.7), 25vw 19vh 0 1px rgba(255, 255, 255, 0.7), 100vw 43vh 0 1px rgba(255, 255, 255, 0.7), 19vw 70vh 0 1px rgba(255, 255, 255, 0.7), 17vw 87vh 0 2px rgba(255, 255, 255, 0.7), 98vw 95vh 0 1px rgba(255, 255, 255, 0.7), 94vw 85vh 0 1px rgba(255, 255, 255, 0.7), 11vw 55vh 0 2px rgba(255, 255, 255, 0.7), 44vw 67vh 0 2px rgba(255, 255, 255, 0.7), 74vw 84vh 0 2px rgba(255, 255, 255, 0.7), 28vw 68vh 0 2px rgba(255, 255, 255, 0.7), 18vw 56vh 0 1px rgba(255, 255, 255, 0.7), 74vw 66vh 0 1px rgba(255, 255, 255, 0.7), 94vw 66vh 0 1px rgba(255, 255, 255, 0.7), 48vw 74vh 0 2px rgba(255, 255, 255, 0.7), 86vw 95vh 0 2px rgba(255, 255, 255, 0.7), 25vw 57vh 0 1px rgba(255, 255, 255, 0.7), 89vw 84vh 0 1px rgba(255, 255, 255, 0.7), 15vw 72vh 0 2px rgba(255, 255, 255, 0.7), 93vw 65vh 0 2px rgba(255, 255, 255, 0.7), 41vw 89vh 0 2px rgba(255, 255, 255, 0.7), 42vw 66vh 0 1px rgba(255, 255, 255, 0.7), 54vw 53vh 0 1px rgba(255, 255, 255, 0.7), 60vw 80vh 0 1px rgba(255, 255, 255, 0.7), 59vw 64vh 0 2px rgba(255, 255, 255, 0.7), 15vw 53vh 0 2px rgba(255, 255, 255, 0.7), 14vw 88vh 0 1px rgba(255, 255, 255, 0.7), 58vw 71vh 0 1px rgba(255, 255, 255, 0.7), 70vw 77vh 0 1px rgba(255, 255, 255, 0.7), 10vw 65vh 0 1px rgba(255, 255, 255, 0.7), 44vw 83vh 0 1px rgba(255, 255, 255, 0.7), 70vw 57vh 0 2px rgba(255, 255, 255, 0.7), 28vw 63vh 0 1px rgba(255, 255, 255, 0.7), 72vw 87vh 0 2px rgba(255, 255, 255, 0.7), 68vw 94vh 0 1px rgba(255, 255, 255, 0.7), 13vw 67vh 0 2px rgba(255, 255, 255, 0.7), 53vw 56vh 0 1px rgba(255, 255, 255, 0.7), 99vw 84vh 0 1px rgba(255, 255, 255, 0.7), 94vw 83vh 0 2px rgba(255, 255, 255, 0.7), 93vw 68vh 0 1px rgba(255, 255, 255, 0.7), 15vw 93vh 0 1px rgba(255, 255, 255, 0.7), 11vw 89vh 0 1px rgba(255, 255, 255, 0.7), 82vw 73vh 0 1px rgba(255, 255, 255, 0.7), 80vw 62vh 0 1px rgba(255, 255, 255, 0.7), 9vw 72vh 0 2px rgba(255, 255, 255, 0.7), 69vw 82vh 0 1px rgba(255, 255, 255, 0.7), 36vw 69vh 0 1px rgba(255, 255, 255, 0.7), 46vw 75vh 0 1px rgba(255, 255, 255, 0.7), 54vw 88vh 0 1px rgba(255, 255, 255, 0.7), 66vw 54vh 0 1px rgba(255, 255, 255, 0.7), 18vw 67vh 0 1px rgba(255, 255, 255, 0.7), 81vw 94vh 0 2px rgba(255, 255, 255, 0.7), 97vw 56vh 0 1px rgba(255, 255, 255, 0.7), 73vw 75vh 0 2px rgba(255, 255, 255, 0.7), 94vw 87vh 0 2px rgba(255, 255, 255, 0.7), 19vw 41vh 0 2px rgba(255, 255, 255, 0.7), 92vw 38vh 0 2px rgba(255, 255, 255, 0.7), 87vw 95vh 0 2px rgba(255, 255, 255, 0.7), 48vw 75vh 0 1px rgba(255, 255, 255, 0.7), 28vw 61vh 0 1px rgba(255, 255, 255, 0.7), 51vw 70vh 0 2px rgba(255, 255, 255, 0.7), 79vw 79vh 0 1px rgba(255, 255, 255, 0.7), 28vw 74vh 0 2px rgba(255, 255, 255, 0.7), 37vw 11vh 0 2px rgba(255, 255, 255, 0.7), 82vw 84vh 0 2px rgba(255, 255, 255, 0.7), 45vw 76vh 0 1px rgba(255, 255, 255, 0.7), 6vw 84vh 0 2px rgba(255, 255, 255, 0.7), 99vw 91vh 0 2px rgba(255, 255, 255, 0.7), 12vw 66vh 0 1px rgba(255, 255, 255, 0.7), 1vw 73vh 0 1px rgba(255, 255, 255, 0.7), 38vw 74vh 0 1px rgba(255, 255, 255, 0.7), 88vw 64vh 0 1px rgba(255, 255, 255, 0.7), 91vw 97vh 0 1px rgba(255, 255, 255, 0.7), 56vw 84vh 0 2px rgba(255, 255, 255, 0.7), 66vw 66vh 0 1px rgba(255, 255, 255, 0.7), 67vw 71vh 0 1px rgba(255, 255, 255, 0.7), 54vw 54vh 0 2px rgba(255, 255, 255, 0.7), 41vw 67vh 0 2px rgba(255, 255, 255, 0.7), 36vw 82vh 0 1px rgba(255, 255, 255, 0.7), 23vw 92vh 0 1px rgba(255, 255, 255, 0.7), 4vw 79vh 0 1px rgba(255, 255, 255, 0.7), 31vw 63vh 0 2px rgba(255, 255, 255, 0.7), 54vw 86vh 0 2px rgba(255, 255, 255, 0.7), 52vw 74vh 0 1px rgba(255, 255, 255, 0.7), 29vw 95vh 0 1px rgba(255, 255, 255, 0.7), 34vw 95vh 0 2px rgba(255, 255, 255, 0.7), 25vw 69vh 0 1px rgba(255, 255, 255, 0.7), 100vw 83vh 0 1px rgba(255, 255, 255, 0.7)
     }
+   
 
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
-}*/
+}
 
 .content {
     max-width: 60%;
@@ -87,48 +116,75 @@ body {
 }
 
 hr {
-    border-top: 1px dashed #8c8b8b;
-    border-bottom: 1px dashed #fff;
+    border-top: 1px dashed #FFFFFF;
+    border-bottom: 1px dashed #FFFFFF;
+    position:relative;
 }
 
 h1 {
     text-align: center;
-    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    position: relative;	
 }
+
+a {
+    color: #FFFFFF;
+    padding: 0.1em;
+    text-decoration: none;
+	border:solid;
+	border-color: transparent;
+}
+
+a:hover {
+    border-color: #FFFFFF;
+    text-decoration: underline;   
+}
+
+/*  - - - - - - - - IMAGE OUTLINE  - - - - - - - - - - - - - */
+img {
+    outline-width: 0.1em;
+    outline-color: #FFFFFF;
+    outline-style: solid;
+}
+
 /*  - - - - - - - - HEADER
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 .site-title {
     font-style: italic;
     text-transform: uppercase;
+    position: relative;
+    text-align: center;
+	overflow: hidden;
 }
 
 .site-header {
-    /*background: #DAFFD8;*/
-    padding: 0.1em 0 0 0;
-}
+							
+    padding:0 0 0 0;
+ 
 
-.site-title {
-    line-height: 1em;
-    margin: 0 0 0.1em 0;
-    position: relative;
-    z-index: 3;
-    text-align: center;
+			 
+					 
+						
+					   
+			   
+					   
 }
 
 .site-title a {
-    color: #004204;
+    color: #FFFFFF;
     font-size: 0.8em;
-    padding: 0;
-    text-decoration: none;
-    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	border: solid;
+	border-color: transparent;
+	display: inline-block;
+	padding: 0 0 0 0;
 }
 
 .site-title a:hover {
-    color: #000000;
-    font-size: 0.8em;
-    padding: 0;
+				   
+					 
+			   
     text-decoration: underline;
+	border-color: #FFFFFF;
 }
 
 .header-wrap {
@@ -138,19 +194,19 @@ h1 {
 
 @media screen and (min-width: 37em) {
 
-.header-wrap {
-    display: grid;
-    grid-template-columns: repeat(7, minmax(14.285714286%, 7.4em));
-}
+    .header-wrap {
+        display: block;
+																   
+    }
 
-.site-title {
-    grid-column: 1 / 7;
-}
+			 
+					   
+ 
 
-.site-title a {
-    padding-left: 0;
-    padding-right: 0;
-}
+    .site-title a {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 /*  - - - - - - - - TOP NAVIGATION BAR - MENU
@@ -171,32 +227,35 @@ nav {
 
 /* Add a black background color to the top navigation */
 nav {
-    background-color: #545454;
-    overflow: hidden;
+    position:relative;
+					 
 }
 
 /* Style the links inside the navigation bar */
-nav a {
-    color: #f2f2f2;
-    text-decoration: none;
-    font-size: 1.0em;
-    padding: 0.3em;
-    display: block;
-    margin: 0.2em;
-}
+    nav a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 1.0em;
+        padding: 0.3em;
+        display: block;
+        margin: 0.2em;
+		border: solid;
+		border-color: transparent;
+        
+    }
 
 /* Change the color of links on hover */
-nav a:hover {
-    background-color: #ddd;
-    color: black;
-    text-decoration: underline;
-}
+    nav a:hover {
+        text-decoration: underline;
+		border-color: #FFFFFF;
+							   
+    }
 
 /* Add a color to the active/current link */
-    nav a.active {
-        background-color: #DAFFD8;
-        color: #000000;
-        text-decoration: underline dotted;
+    nav a:active {
+								  
+					   
+        text-decoration: overline solid;
     }
 
 /* MENU levels visibility and appearance */
@@ -206,11 +265,13 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #545454;
+    position: relative;
 }
 
 nav li {
     display: inline-block;
+    border-bottom: 2px #FFFFFF dashed;
+    position:relative;
 }
 
 
@@ -218,35 +279,39 @@ nav li {
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 .home {
     text-align: center;
+    position: relative;
 }
 
-.home ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
+    .home ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: relative;
+    }
 
-.home h1 {
-    font-size: 2em;
-}
+    .home h1 {
+        font-size: 2em;
+        position: relative;
+    }
 
-.home h2 {
-    font-size: 1.2em;
-}
+    .home h2 {
+        font-size: 1.2em;
+        position: relative;
+    }
 
 /*  - - - - - - - - FOOTER CONTENT - Fixed to stay under the page content at the bottom
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 footer {
-    width: 100%;
-    background-color: #545454;
-    color: #000000;
+				
+    color: #FFFFFF;
+				   
     font-family: Verdana, sans-serif;
     letter-spacing: -0.02em;
     padding: 0.1em;
     text-align: center;
     font-size: 0.8em;
-    color: white;
+				 
     position: relative;
     bottom: 0;
     width: 100%;
@@ -260,35 +325,36 @@ footer {
 
 /*  - - - - - - - - RESUME PAGE CONTENT
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-/*
-.resume{
-	background-color: #f1f1f1;
-}
+
+		
+						   
+ 
 
 /*  - - - - - - - - Button LINK  - - - - - - - - - - - - - */
 .button {
     padding: 0.7em;
     text-align: center;
     font-size: 0.8em;
+    position: relative;
 }
 
 .button a {
-	background: #ccc;
-	color: #000000;
-	text-align: center;
-	padding: 0.3em 0.3em;
-	text-decoration: none;
-	font-size: 1.0em;
-	display: inline-block;
-	border: none;
-	border-radius: 0.2em;
-	cursor: pointer;
+    color: #FFFFFF;
+    text-decoration: underline dashed;
+    text-align: center;
+    padding: 0.3em 0.3em;
+    font-size: 1.0em;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+					  
+				 
 }
 
 .button a:hover {
-	background-color: #ddd;
-	color: black;
-	text-decoration: underline;
+    text-decoration: underline;
+    outline: solid;
+    position: relative;
 }
 
 /*  - - - - - - - - RESUME SECTIONS  - - - - - - - - - - - - - */
@@ -299,6 +365,7 @@ section {
     margin: 0;
     padding: 0;
     vertical-align: baseline;
+    position: relative;
 }
 
 .clear {
@@ -308,20 +375,22 @@ section {
 .sectionTitle {
     float: left;
     width: 25%;
+    position: relative;
 }
 
 .sectionContent {
     float: right;
     width: 72.5%;
-    /*background-color: #f1f1f1;*/
+								  
     text-align: left;
+    position: relative;
 }
 
 .sectionTitle h1 {
     font-family: Arial, sans-serif;
     font-style: italic;
     font-size: 1.2em;
-    color: #000000;
+    color: #FFFFFF;
     text-align: center;
     text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
 }
@@ -330,14 +399,14 @@ section {
     font-family: Arial, sans-serif;
     font-size: 1em;
     margin-bottom: -0.1em;
-    /*	background-color: #f1f1f1;	*/
+									
 }
 
 .subDetails {
     font-size: 0.8em;
     font-style: italic;
     margin-bottom: 0.1em;
-    /*	background-color: #f1f1f1;*/
+								   
 }
 
 .keySkills {
@@ -347,8 +416,9 @@ section {
     column-count: 3;
     margin-bottom: 20px;
     font-size: 1em;
-    color: #444;
+    color: #FFFFFF;
     text-align: left;
+    position: relative;
 }
 
     .keySkills ul li {
@@ -359,7 +429,7 @@ article {
     -webkit-flex: 3;
     -ms-flex: 3;
     flex: 3;
-    /*background-color: #f1f1f1;*/
+								  
     padding: 10px;
 }
 
@@ -421,6 +491,7 @@ article {
 .projectTitle {
     float: left;
     width: 48%;
+    text-decoration: underline dashed;
 }
 
 .projectLastUpdated {
@@ -498,11 +569,11 @@ pre {
     overflow: auto;
 }
 
-    pre > code {
-        display: block;
-        padding: 1rem;
-        word-wrap: normal;
-    }
+pre > code {
+    display: block;
+    padding: 1rem;
+    word-wrap: normal;
+}
 
 /*  - - - - - - - - CONTACT - CONTENT
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -519,24 +590,40 @@ input[type=text], select, textarea {
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
+input[type=email], select, textarea {
+    width: 100%; /* Full width */
+    padding: 1em; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 0.2em; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 0.2em; /* Add a top margin */
+    margin-bottom: 0.2em; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background: #ccc;
-    color: #000000;
+    background-color: transparent;
+    color: #FFFFFF;
     text-align: center;
-    padding: 0.3em 0.3em;
-    text-decoration: none;
+    padding: 0.3em;
+						  
     font-size: 1em;
     display: inline-block;
-    border: none;
-    border-radius: 0.2em;
+    margin: 0.3em;
+						 
     cursor: pointer;
+    border-bottom: dashed;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 
     /* When moving the mouse over the submit button, add a darker green color */
     input[type=submit]:hover {
-        background-color: #ddd;
-        color: black;
+        text-decoration: underline;
+        outline: solid;
+        position: relative;
     }
 
 /* Add a background color and some padding around the form */
@@ -545,12 +632,31 @@ input[type=submit] {
     padding: 1em;
 }
 
+
+.button {
+    padding: 0.7em;
+    text-align: center;
+    font-size: 0.8em;
+    position: relative;
+}
+
+    .button a {
+        color: #FFFFFF;
+        text-decoration: underline dashed;
+        text-align: center;
+        padding: 0.3em 0.3em;
+        font-size: 1.0em;
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+    }
+
 /*  - - - - - - - - BLOG - CONTENT
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 .signature {
     text-align: right;
-    font: italic;
+    font-style: italic;
 }
 
 .blogPost {
@@ -558,37 +664,39 @@ input[type=submit] {
     padding: 0.1em; /* Some padding */
 }
 
-/*  - - - - - - - - GO BACK BUTTON  - - - - - - - - - - - - - */
-button {
-    padding: 0.7em;
-    text-align: center;
-    font-size: 0.8em;
-}
+																
+		
+				   
+					   
+					 
+ 
 
-button {
-    background: #ccc;
-    color: #000000;
-    text-align: center;
-    padding: 0.3em 0.3em;
-    text-decoration: none;
-    font-size: 1.0em;
-    display: inline-block;
-    border: none;
-    border-radius: 0.2em;
-    cursor: pointer;
-}
+		
+					 
+				   
+					   
+						 
+						  
+					 
+						  
+				 
+						 
+					
+ 
 
-button:hover {
-    background-color: #ddd;
-    color: black;
-    text-decoration: underline;
-}
+			  
+						   
+				 
+							   
+ 
 
 /*  - - - - - - - - IMAGE, VIDEO, ICON  - - - - - - - - - - - - - */
 img {
     border: 0.1em;
-    min-width: 50px;
-    min-height: auto;
+	border: solid;
+	border-color: #FFFFFF;
+    min-width: 25px;
+    min-height: 25px;
 }
 
 @media all and (min-width: 602px) and (max-width: 800px) {
@@ -615,7 +723,7 @@ img {
 
     img {
         border: 0.1em;
-        min-width: 100px;
+        min-width: 50px;
     }
 
     figcaption {
@@ -641,26 +749,47 @@ img {
     }
 }
 
+
+/* - - - - - - - - - - - - PRINT SETTINGS - - - - - - - - - - - - - */
 @media print {
     /* This media query only applies itself to the page during printing */
     header, footer, nav, .button, iframe {
-        display: none !important;
+        display: none;
     }
 
-    body, main {
-        width: 100%;
-        text-align: center;
-    }
+	img {
+		max-width: 100%;
+	}
+ 
+	body, main {
+		font: 12pt Georgia, "Times New Roman", Times, serif;
+		line-height: 1.3;
+		overflow: visible;
+	}
 
+	h1 {
+		font-size: 24pt;
+	}
+ 
+
+	h2 {
+		font-size: 14pt;
+		margin-top: 25px;
+	}
+
+	aside h2 {
+		font-size: 18pt;
+				
+					  
+	}
+
+	blockquote, ul {
+		margin: 0;
+	}
+	
+	ul {list-style: none}
+	
     .content{
-        width:100%;
+        overflow: visible;
     }
-}
-
-/*  - - - - - - - - Logo  - - - - - - - - - - - - - */
-
-#Mycanvas {
-    height: 100%;
-    width: 100%;
-    background: black;
 }

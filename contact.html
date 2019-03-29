@@ -6,11 +6,12 @@
     <meta name="author" content="Anna Latacz" />
     <meta name="description" content="Contact - Anna Latacz" />
     <meta name="keywords" content="contact details, email, phone number, CV, Anna, Latacz" />
-    <title>Anna Latacz</title>
     <!-- CSS script files -->
     <link rel="stylesheet" type="text/css" href="css/all.css" />
+	<title>Anna Latacz</title>
 </head>
 <body>
+    <div class="stars"></div>
     <header class="site-header">
         <div class="header-wrap">
             <div class="site-title">
@@ -19,29 +20,29 @@
         </div>
         <a class="skip-link" href="#main">Skip navigation</a>
         <nav>
-                <ul>
-                    <li>
-                        <a href="./index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="./about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="./resume.html">Resume</a>
-                    </li>
-                    <li>
-                        <a href="./blog.html">Blog</a>
-                    </li>
-                    <li>
-                        <a href="./portfolio.html">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="./publications.html">Publications</a>
-                    </li>
-                    <li>
-                        <a class="active" href="./contact.html">Contact</a>
-                    </li>
-                </ul>
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./about.html">About</a>
+                </li>
+                <li>
+                    <a href="./resume.html">Resume</a>
+                </li>
+                <li>
+                    <a href="./blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="./portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="./publications.html">Publications</a>
+                </li>
+                <li>
+                    <a class="active" href="./contact.html">Contact</a>
+                </li>
+            </ul>
         </nav>
     </header>
     <main id="main">
@@ -52,7 +53,7 @@
                     <h2>Contact Form</h2>
                     <p>Please, use the provided form if you want to contact me. If the query is urgent please call!</p>
                     <div class="container">
-                        <form method="POST" action="https://formspree.io/ann.latacz@gmail.com">
+                        <form action="https://formspree.io/ann.latacz@gmail.com" method="POST">
                             <div class="row">
                                 <div class="col-25">
                                     <label for="fname">First Name</label>
@@ -71,31 +72,32 @@
                             </div>
                             <div class="row">
                                 <div class="col-25">
-                                    <label for="email">Your email...</label>
+                                    <label for="email">Email</label>
                                 </div>
                                 <div class="col-75">
-                                    <input type="email" name="_replyto" placeholder="Your email..." />
-                                </div>
-                            </div>
-							<div class="row">
-                                <div class="col-25">
-                                    <label for="subject">Subject of your message...</label>
-                                </div>
-                                <div class="col-75">
-                                    <input type="text" id="subject" name="subject" placeholder="Your subject..." />
+                                    <input type="email" id="email" name="replyto" placeholder="Your email..." />
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-25">
-                                    <label for="subject">Message</label>
+                                    <label for="subject">Subject</label>
                                 </div>
                                 <div class="col-75">
-                                    <textarea id="text" name="message" placeholder="Your message..." style="height:200px"></textarea>
+                                    <input type="text" id="subject" name="subjecttitle" placeholder="Your subject..." />
                                 </div>
                             </div>
                             <div class="row">
-								<input type="submit" value="Send">
+                                <div class="col-25">
+                                    <label for="message">Message</label>
+                                </div>
+                                <div class="col-75">
+                                    <textarea id="message" name="messagetext" placeholder="Your message..." style="height:200px"></textarea>
+                                </div>
                             </div>
+                            <div class="row">
+                                <input type="submit" value="Send" />
+                            </div>                          
+                            <input type="hidden" name="_next" value="https://mysite.com/thanks.html" />
                         </form>
                     </div>
                 </section>
