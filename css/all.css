@@ -522,6 +522,11 @@ article {
     text-align: left;
 }
 
+iframe{
+	width: auto;
+	height: auto;
+}
+
 pre, code {
     font-family: monospace, monospace;
 }
