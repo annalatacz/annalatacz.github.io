@@ -26,20 +26,6 @@ html {
 }
 
 /* - - - - - - - - BACKGROUND & ANIMATION  - - - - - - - - - - - - -*/
-				   
-									 
-							
-				
-				 
-				 
-																		  
-							   
-												  
-											   
-										  
- 
-
-						  
 @-webkit-keyframes html {
     0% {
         -webkit-transform: translate(5%, -2%);
@@ -55,9 +41,7 @@ html {
         -webkit-transform: rotate(-10deg);
         transform: rotate(-10deg);
     }
- 
 
-						  
     60% {
         -webkit-transform: translate(7%, -2%);
         transform: translate(7%, -2%);
@@ -106,7 +90,6 @@ body {
     .stars {
         box-shadow: 119vw 46vh 0 1px rgba(255, 255, 255, 0.7), 98vw 35vh 0 1px rgba(255, 255, 255, 0.7), 33vw 46vh 0 1px rgba(255, 255, 255, 0.7), 74vw 4vh 0 2px rgba(255, 255, 255, 0.7), 45vw 45vh 0 1px rgba(255, 255, 255, 0.7), 57vw 44vh 0 2px rgba(255, 255, 255, 0.7), 100vw 17vh 0 1px rgba(255, 255, 255, 0.7), 74vw 36vh 0 1px rgba(255, 255, 255, 0.7), 94vw 16vh 0 1px rgba(255, 255, 255, 0.7), 48vw 34vh 0 2px rgba(255, 255, 255, 0.7), 86vw 5vh 0 2px rgba(255, 255, 255, 0.7), 25vw 7vh 0 1px rgba(255, 255, 255, 0.7), 89vw 34vh 0 1px rgba(255, 255, 255, 0.7), 93vw 25vh 0 2px rgba(255, 255, 255, 0.7), 41vw 9vh 0 2px rgba(255, 255, 255, 0.7), 42vw 36vh 0 1px rgba(255, 255, 255, 0.7), 54vw 23vh 0 1px rgba(255, 255, 255, 0.7), 50vw 46vh 0 1px rgba(255, 255, 255, 0.7), 50vw 19vh 0 2px rgba(255, 255, 255, 0.7), 60vw 40vh 0 1px rgba(255, 255, 255, 0.7), 59vw 4vh 0 2px rgba(255, 255, 255, 0.7), 15vw 23vh 0 2px rgba(255, 255, 255, 0.7), 14vw 38vh 0 1px rgba(255, 255, 255, 0.7), 58vw 41vh 0 1px rgba(255, 255, 255, 0.7), 70vw 7vh 0 1px rgba(255, 255, 255, 0.7), 10vw 25vh 0 1px rgba(255, 255, 255, 0.7), 44vw 33vh 0 1px rgba(255, 255, 255, 0.7), 70vw 37vh 0 2px rgba(255, 255, 255, 0.7), 28vw 33vh 0 1px rgba(255, 255, 255, 0.7), 72vw 7vh 0 2px rgba(255, 255, 255, 0.7), 68vw 34vh 0 1px rgba(255, 255, 255, 0.7), 13vw 17vh 0 2px rgba(255, 255, 255, 0.7), 13vw 7vh 0 2px rgba(255, 255, 255, 0.7), 53vw 36vh 0 1px rgba(255, 255, 255, 0.7), 94vw 23vh 0 2px rgba(255, 255, 255, 0.7), 81vw 18vh 0 2px rgba(255, 255, 255, 0.7), 15vw 33vh 0 1px rgba(255, 255, 255, 0.7), 11vw 29vh 0 1px rgba(255, 255, 255, 0.7), 82vw 23vh 0 1px rgba(255, 255, 255, 0.7), 80vw 32vh 0 1px rgba(255, 255, 255, 0.7), 9vw 2vh 0 2px rgba(255, 255, 255, 0.7), 69vw 2vh 0 1px rgba(255, 255, 255, 0.7), 46vw 39vh 0 1px rgba(255, 255, 255, 0.7), 46vw 15vh 0 1px rgba(255, 255, 255, 0.7), 54vw 48vh 0 1px rgba(255, 255, 255, 0.7), 66vw 34vh 0 1px rgba(255, 255, 255, 0.7), 7vw 42vh 0 2px rgba(255, 255, 255, 0.7), 18vw 17vh 0 1px rgba(255, 255, 255, 0.7), 81vw 14vh 0 2px rgba(255, 255, 255, 0.7), 97vw 16vh 0 1px rgba(255, 255, 255, 0.7), 97vw 8vh 0 2px rgba(255, 255, 255, 0.7), 94vw 7vh 0 2px rgba(255, 255, 255, 0.7), 19vw 41vh 0 2px rgba(255, 255, 255, 0.7), 72vw 2vh 0 2px rgba(255, 255, 255, 0.7), 87vw 45vh 0 2px rgba(255, 255, 255, 0.7), 48vw 45vh 0 1px rgba(255, 255, 255, 0.7), 51vw 50vh 0 2px rgba(255, 255, 255, 0.7), 85vw 2vh 0 2px rgba(255, 255, 255, 0.7), 28vw 4vh 0 2px rgba(255, 255, 255, 0.7), 37vw 11vh 0 2px rgba(255, 255, 255, 0.7), 82vw 34vh 0 2px rgba(255, 255, 255, 0.7), 36vw 48vh 0 1px rgba(255, 255, 255, 0.7), 45vw 46vh 0 1px rgba(255, 255, 255, 0.7), 6vw 44vh 0 2px rgba(255, 255, 255, 0.7), 99vw 11vh 0 2px rgba(255, 255, 255, 0.7), 12vw 46vh 0 1px rgba(255, 255, 255, 0.7), 1vw 3vh 0 1px rgba(255, 255, 255, 0.7), 38vw 34vh 0 1px rgba(255, 255, 255, 0.7), 88vw 4vh 0 1px rgba(255, 255, 255, 0.7), 91vw 17vh 0 1px rgba(255, 255, 255, 0.7), 56vw 34vh 0 2px rgba(255, 255, 255, 0.7), 54vw 34vh 0 2px rgba(255, 255, 255, 0.7), 28vw 17vh 0 1px rgba(255, 255, 255, 0.7), 41vw 17vh 0 2px rgba(255, 255, 255, 0.7), 36vw 22vh 0 1px rgba(255, 255, 255, 0.7), 4vw 9vh 0 1px rgba(255, 255, 255, 0.7), 31vw 23vh 0 2px rgba(255, 255, 255, 0.7), 54vw 26vh 0 2px rgba(255, 255, 255, 0.7), 52vw 14vh 0 1px rgba(255, 255, 255, 0.7), 29vw 45vh 0 1px rgba(255, 255, 255, 0.7), 34vw 45vh 0 2px rgba(255, 255, 255, 0.7), 25vw 19vh 0 1px rgba(255, 255, 255, 0.7), 100vw 43vh 0 1px rgba(255, 255, 255, 0.7), 19vw 70vh 0 1px rgba(255, 255, 255, 0.7), 17vw 87vh 0 2px rgba(255, 255, 255, 0.7), 98vw 95vh 0 1px rgba(255, 255, 255, 0.7), 94vw 85vh 0 1px rgba(255, 255, 255, 0.7), 11vw 55vh 0 2px rgba(255, 255, 255, 0.7), 44vw 67vh 0 2px rgba(255, 255, 255, 0.7), 74vw 84vh 0 2px rgba(255, 255, 255, 0.7), 28vw 68vh 0 2px rgba(255, 255, 255, 0.7), 18vw 56vh 0 1px rgba(255, 255, 255, 0.7), 74vw 66vh 0 1px rgba(255, 255, 255, 0.7), 94vw 66vh 0 1px rgba(255, 255, 255, 0.7), 48vw 74vh 0 2px rgba(255, 255, 255, 0.7), 86vw 95vh 0 2px rgba(255, 255, 255, 0.7), 25vw 57vh 0 1px rgba(255, 255, 255, 0.7), 89vw 84vh 0 1px rgba(255, 255, 255, 0.7), 15vw 72vh 0 2px rgba(255, 255, 255, 0.7), 93vw 65vh 0 2px rgba(255, 255, 255, 0.7), 41vw 89vh 0 2px rgba(255, 255, 255, 0.7), 42vw 66vh 0 1px rgba(255, 255, 255, 0.7), 54vw 53vh 0 1px rgba(255, 255, 255, 0.7), 60vw 80vh 0 1px rgba(255, 255, 255, 0.7), 59vw 64vh 0 2px rgba(255, 255, 255, 0.7), 15vw 53vh 0 2px rgba(255, 255, 255, 0.7), 14vw 88vh 0 1px rgba(255, 255, 255, 0.7), 58vw 71vh 0 1px rgba(255, 255, 255, 0.7), 70vw 77vh 0 1px rgba(255, 255, 255, 0.7), 10vw 65vh 0 1px rgba(255, 255, 255, 0.7), 44vw 83vh 0 1px rgba(255, 255, 255, 0.7), 70vw 57vh 0 2px rgba(255, 255, 255, 0.7), 28vw 63vh 0 1px rgba(255, 255, 255, 0.7), 72vw 87vh 0 2px rgba(255, 255, 255, 0.7), 68vw 94vh 0 1px rgba(255, 255, 255, 0.7), 13vw 67vh 0 2px rgba(255, 255, 255, 0.7), 53vw 56vh 0 1px rgba(255, 255, 255, 0.7), 99vw 84vh 0 1px rgba(255, 255, 255, 0.7), 94vw 83vh 0 2px rgba(255, 255, 255, 0.7), 93vw 68vh 0 1px rgba(255, 255, 255, 0.7), 15vw 93vh 0 1px rgba(255, 255, 255, 0.7), 11vw 89vh 0 1px rgba(255, 255, 255, 0.7), 82vw 73vh 0 1px rgba(255, 255, 255, 0.7), 80vw 62vh 0 1px rgba(255, 255, 255, 0.7), 9vw 72vh 0 2px rgba(255, 255, 255, 0.7), 69vw 82vh 0 1px rgba(255, 255, 255, 0.7), 36vw 69vh 0 1px rgba(255, 255, 255, 0.7), 46vw 75vh 0 1px rgba(255, 255, 255, 0.7), 54vw 88vh 0 1px rgba(255, 255, 255, 0.7), 66vw 54vh 0 1px rgba(255, 255, 255, 0.7), 18vw 67vh 0 1px rgba(255, 255, 255, 0.7), 81vw 94vh 0 2px rgba(255, 255, 255, 0.7), 97vw 56vh 0 1px rgba(255, 255, 255, 0.7), 73vw 75vh 0 2px rgba(255, 255, 255, 0.7), 94vw 87vh 0 2px rgba(255, 255, 255, 0.7), 19vw 41vh 0 2px rgba(255, 255, 255, 0.7), 92vw 38vh 0 2px rgba(255, 255, 255, 0.7), 87vw 95vh 0 2px rgba(255, 255, 255, 0.7), 48vw 75vh 0 1px rgba(255, 255, 255, 0.7), 28vw 61vh 0 1px rgba(255, 255, 255, 0.7), 51vw 70vh 0 2px rgba(255, 255, 255, 0.7), 79vw 79vh 0 1px rgba(255, 255, 255, 0.7), 28vw 74vh 0 2px rgba(255, 255, 255, 0.7), 37vw 11vh 0 2px rgba(255, 255, 255, 0.7), 82vw 84vh 0 2px rgba(255, 255, 255, 0.7), 45vw 76vh 0 1px rgba(255, 255, 255, 0.7), 6vw 84vh 0 2px rgba(255, 255, 255, 0.7), 99vw 91vh 0 2px rgba(255, 255, 255, 0.7), 12vw 66vh 0 1px rgba(255, 255, 255, 0.7), 1vw 73vh 0 1px rgba(255, 255, 255, 0.7), 38vw 74vh 0 1px rgba(255, 255, 255, 0.7), 88vw 64vh 0 1px rgba(255, 255, 255, 0.7), 91vw 97vh 0 1px rgba(255, 255, 255, 0.7), 56vw 84vh 0 2px rgba(255, 255, 255, 0.7), 66vw 66vh 0 1px rgba(255, 255, 255, 0.7), 67vw 71vh 0 1px rgba(255, 255, 255, 0.7), 54vw 54vh 0 2px rgba(255, 255, 255, 0.7), 41vw 67vh 0 2px rgba(255, 255, 255, 0.7), 36vw 82vh 0 1px rgba(255, 255, 255, 0.7), 23vw 92vh 0 1px rgba(255, 255, 255, 0.7), 4vw 79vh 0 1px rgba(255, 255, 255, 0.7), 31vw 63vh 0 2px rgba(255, 255, 255, 0.7), 54vw 86vh 0 2px rgba(255, 255, 255, 0.7), 52vw 74vh 0 1px rgba(255, 255, 255, 0.7), 29vw 95vh 0 1px rgba(255, 255, 255, 0.7), 34vw 95vh 0 2px rgba(255, 255, 255, 0.7), 25vw 69vh 0 1px rgba(255, 255, 255, 0.7), 100vw 83vh 0 1px rgba(255, 255, 255, 0.7)
     }
-   
 
 }
 
@@ -158,16 +141,7 @@ img {
 }
 
 .site-header {
-							
     padding:0 0 0 0;
- 
-
-			 
-					 
-						
-					   
-			   
-					   
 }
 
 .site-title a {
@@ -180,9 +154,6 @@ img {
 }
 
 .site-title a:hover {
-				   
-					 
-			   
     text-decoration: underline;
 	border-color: #FFFFFF;
 }
@@ -196,12 +167,7 @@ img {
 
     .header-wrap {
         display: block;
-																   
     }
-
-			 
-					   
- 
 
     .site-title a {
         padding-left: 0;
@@ -228,7 +194,6 @@ nav {
 /* Add a black background color to the top navigation */
 nav {
     position:relative;
-					 
 }
 
 /* Style the links inside the navigation bar */
@@ -248,11 +213,10 @@ nav {
     nav a:hover {
         text-decoration: underline;
 		border-color: #FFFFFF;
-							   
     }
 
 /* Add a color to the active/current link */
-    nav a .active {	   
+    nav a .active {
         text-decoration: overline solid;
     }
 
@@ -301,15 +265,12 @@ nav li {
 /*  - - - - - - - - FOOTER CONTENT - Fixed to stay under the page content at the bottom
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 footer {
-				
     color: #FFFFFF;
-				   
     font-family: Verdana, sans-serif;
     letter-spacing: -0.02em;
     padding: 0.1em;
     text-align: center;
     font-size: 0.8em;
-				 
     position: relative;
     bottom: 0;
     width: 100%;
@@ -324,9 +285,6 @@ footer {
 /*  - - - - - - - - RESUME PAGE CONTENT
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-		
-						   
- 
 
 /*  - - - - - - - - Button LINK  - - - - - - - - - - - - - */
 .button {
@@ -345,8 +303,6 @@ footer {
     display: inline-block;
     cursor: pointer;
     position: relative;
-					  
-				 
 }
 
 .button a:hover {
@@ -379,7 +335,6 @@ section {
 .sectionContent {
     float: right;
     width: 72.5%;
-								  
     text-align: left;
     position: relative;
 }
@@ -397,14 +352,12 @@ section {
     font-family: Arial, sans-serif;
     font-size: 1em;
     margin-bottom: -0.1em;
-									
 }
 
 .subDetails {
     font-size: 0.8em;
     font-style: italic;
     margin-bottom: 0.1em;
-								   
 }
 
 .keySkills {
@@ -427,7 +380,6 @@ article {
     -webkit-flex: 3;
     -ms-flex: 3;
     flex: 3;
-								  
     padding: 10px;
 }
 
@@ -605,11 +557,9 @@ input[type=submit] {
     color: #FFFFFF;
     text-align: center;
     padding: 0.3em;
-						  
     font-size: 1em;
     display: inline-block;
     margin: 0.3em;
-						 
     cursor: pointer;
     border-bottom: dashed;
     border-top: none;
@@ -661,32 +611,6 @@ input[type=submit] {
     text-align: left;
     padding: 0.1em; /* Some padding */
 }
-
-																
-		
-				   
-					   
-					 
- 
-
-		
-					 
-				   
-					   
-						 
-						  
-					 
-						  
-				 
-						 
-					
- 
-
-			  
-						   
-				 
-							   
- 
 
 /*  - - - - - - - - IMAGE, VIDEO, ICON  - - - - - - - - - - - - - */
 img {
@@ -768,7 +692,6 @@ img {
 	h1 {
 		font-size: 24pt;
 	}
- 
 
 	h2 {
 		font-size: 14pt;
@@ -777,8 +700,6 @@ img {
 
 	aside h2 {
 		font-size: 18pt;
-				
-					  
 	}
 
 	blockquote, ul {
