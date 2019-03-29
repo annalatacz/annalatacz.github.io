@@ -216,7 +216,7 @@ nav {
     }
 
 /* Add a color to the active/current link */
-    nav a .active {
+    nav .active {
         text-decoration: overline solid;
     }
 
