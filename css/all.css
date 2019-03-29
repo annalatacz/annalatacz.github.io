@@ -155,13 +155,6 @@ a:hover {
     text-decoration: underline;   
 }
 
-/*  - - - - - - - - IMAGE OUTLINE  - - - - - - - - - - - - - */
-img {
-    outline-width: 0.1em;
-    outline-color: #FFFFFF;
-    outline-style: solid;
-}
-
 /*  - - - - - - - - HEADER
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
@@ -655,8 +648,10 @@ img {
     border: 0.1em;
 	border: solid;
 	border-color: #FFFFFF;
-    min-width: 25px;
-    min-height: 25px;
+    min-width: 40px;
+    min-height: 40px;
+	max-width:100%;
+	max-height:100%;
 }
 
 @media all and (min-width: 602px) and (max-width: 800px) {
@@ -664,11 +659,6 @@ img {
         width: 100%;
     }
     
-    img {
-        border: 0.1em;
-        min-width: 100px;
-    }
-
     figcaption {
         text-align: center;
         width: 100%;
@@ -681,11 +671,6 @@ img {
         width: 100%;
     }
 
-    img {
-        border: 0.1em;
-        min-width: 50px;
-    }
-
     figcaption {
         text-align: center;
         width: 100%;
@@ -696,11 +681,6 @@ img {
 
     figure {
         width: 100%;
-    }
-
-    img {
-        border: 0.1em;
-        min-width: 100%;
     }
 
     figcaption {
