@@ -7,7 +7,7 @@
     <meta name="description" content="About - Anna Latacz" />
     <meta name="keywords" content="Anna, Latacz, about page" />
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
-        <!-- CSS script files -->
+    <!-- CSS script files -->
     <link rel="stylesheet" type="text/css" href="css/all.css" />
 	<!-- JavaScript files -->
     <script type="text/javascript" src="js/scripts.js" ></script>
@@ -51,72 +51,118 @@
     <main id="main">
         <div class="content">
             <div class="about">
-                <h1>About this website</h1>
+				<h1>About this website</h1>
                 <section>
-                    <h2>Technologies used:</h2>
+					<h2>Purpose</h2>
+					<p>For my MSc module assignment, I decided to use the opportunity of a project based assignment to create a professional website to showcase my CV and portfolio of projects and publications. I decided to use this assignment for my own personal/professional purpose. With the proposal being quite broad, I decided to focus on a static design workflow to ensure the most optimised loading times, customisation of design, cross browser compatibility and the focus on accessibility. With the workflow, I decided to go with <a href="https://pages.github.com/" aria-label="GitHub Pages website">GitHub Pages</a>. GitHub is a platform on which developers can store their projects that allows for auditable and agile version control and publication of the contents. </p>
+				</section>
+				<section>
+                    <h2>Technologies used</h2>
+					<p>The requirement was to utilise HTML, CSS and a third technology to create the website.</p>
                     <article>
                         <h3>HTML</h3>
-                        <p>The site had been written in html 5 as per requirements. The elements had been chosen on a fit-for-purpose basis and are self-explanatory (based on the names of the sections used in the main navigation bar).</p>
-                    </article><article>
+                        <p>The website has been written in HTML 5 as it is the latest version of the markup language. For more information about it: <a href="https://www.w3.org/TR/html5/index.html#contents" aria-label="W3C HTML 5.2 Recommendation"> HTML 5.2 </a>.</p>
+						<p>To ensure the website meets the HTML norms, I have written the HTML to the industry standard and the source files have been validated using <a href="https://validator.w3.org/#validate_by_uri" aria-label="W3C HTML Markup Validation Service validator">W3C HTML Markup Validation Service</a>.</p>
+                    </article>
+					<article>
                         <h3>CSS</h3>
-                        <p>The site uses CSS. All files are located in the CSS folder. There is one general file for style of the website. Given research on websites available on the internet I was not sure what exactly classifies as non-trivial use of CSS, so I used it for several things:</p>
+                        <p>The site uses CSS 3. For the purpose of simplification of the verification of the css files I put all the formatting into one file called all.css located in the CSS folder. The file is divided into sections as every sub-page have its own formatting when required. Some elements e.g. headers are referenced in several sections as their style is dependent on that specific sub-page requirements.</p>
+						<p>CSS is used for:</p>
 						<ul>
-                            <li>General styling of the website (fonts, indents etc.). </li>
+                            <li>General styling of the website (fonts, indents etc.).</li>
                             <li>Ensuring website is mobile and small screen friendly and responsive.</li>
-							<li>Provide printing format (with exclusion of unnecessary elements like menu).</li>
-							<li>Background creation - My version is a night sky with stars. It required creative use of the gradient background and box-shadow attribute. Only CSS was mentioned thus I focused on the static generation of stars (instead of using SCSS etc.). 
-							Originally I was thinking about enhancing sky with the animation of the stars and/or gradient but during testing a few people mentioned that they got a bit “sea sick” so I dropped the idea.</li>
+							<li>Providing printing format (with exclusion of unnecessary elements like navigation bar).</li>
+							<li>Background simulating night sky with stars. It required creative use of the gradient background and box-shadow attribute. Originally, inspired by particle generators, the stars were meant to be moving but user testing illustrated that in some users the movement of the background caused queasiness.</li>
+							<li>I did look at using an extension languages e.g. SASS but came to the conclusion that there could be issues with some web browsers and decided against this route instead focusing on CSS, which would in turn, keep to my original workflow concept of cross-browser compatibility.</li>
+							<li>To note for the use of Icons on the main webpage, I decided to use an external CSS reference to the open source project <a href=" https://fontawesome.com/support" aria-label=" Font Awesome website link"> Font Awesome </a> Using these font icons would allow the use of icons instead of pictures which would again add to the load time of the page. These are used for the LinkedIn/Pinterest/Dropbox/Amazon icons on the main page.</li>
                         </ul>
-                    </article><article>
-                        <h3>Cookies with JavaScript</h3>
-                        <p>For the third technology used I choose cookies. The cookie is incorporated into this specific sub-page/section of the website as it is required only for the purpose of the assignment. I see no reason to store any information about visitors, and there is nothing here that would 
-						require storing of the information for ease of use (e.g. login details, shopping cart), as soon as the assignment is done it will be removed.</p>
-						<p>Currently, to illustrate that the cookie created is working as it should it was set up to expire within 3 minutes. Originally, the idea behind it was that the new visitors are greeted when coming to the site with a more personalised greeting but this may seem creepy so it is
-						limited only to this page. The banner is visible only to new users (as long as there is no active cookie and there cookies are enabled).</p>
+						<p>To ensure the website meets CSS standards, I have written the CSS in line with the industry standard and the source file has beenvalidated using <a href="https://jigsaw.w3.org/css-validator/" aria-label="W3C CSS Validation Service  validator">W3C CSS Validation Service</a>.</p>
+						<figure>
+							<img src="images/cssvalidationresult.png" alt="Screenshoots of the CSS style positive test results." />
+							<figcaption>Screenshoots of the CSS style positive test results.</figcaption>
+						</figure>
+					</article>
+					<article>
+                        <h3>Client-side scripts using JavaScript</h3>
+                        <p>JavaScript is a general purpose scripting language that is supported by most web browsers. It provides versatile tool to create various effects and enhancements to the website. For the purpose of this project, it was used to create a cookie and cookie banner effects.</p>
+						<p>Cookies are used for the storing of data. They can include storage of session details, login details, and even shopping cart data. Given, that this website does not require such storage only a very simple cookie has been created that stores the date of the last 
+						visit to the webpage made from that specific device.</p>
+						<p>The idea behind it, was to create a more personalised greeting for the users with everyone who had not visited the site in the last 6 months would be considered a new visitor. </p>
+						<p>To showcase the use of a third technology, Javascript was used to create a cookie that would be valid for 3 minutes and then will be only limited to the About page due to possible concerns this may cause for the users. The idea was to create a personal greeting based on if 
+						the visitor is new or a returning one. For further development of the site I believe this cookie will be disabled to ensure less intrusion on the website.</p>
+						<p>The file had been validated using <a href="https://codebeautify.org/jsvalidate" aria-label=" Code BeautifyJavaScript Validator">JavaScript Validator</a>.</p>
                     </article>
                 </section>
                 <section>
                     <h2>Additional requirements:</h2>
                     <article>
                         <h3>Browser compatibility</h3>
-                        <p>The site had been tested on web browsers:</p>
+                        <p>The site had been tested on most of the popular web browsers such as:</p>
                         <ul>
                             <li>Mozilla Firefox 66.0.1</li>
                             <li>Chrome 73.0.3683.86</li>
-                            <li>Samsung internet 8.2.01.2 (Mobile browser on Samsung Galaxy S6</li>
+							<li>Internet Explorer 11</li>
+							<li>Microsoft Edge 42</li>
+						</ul>
+						<figure>
+                          <img src="images/browsers.git" alt="Screenshoots of the website in different web browsers." />
+                          <figcaption>Screenshoots of the website in different web browsers.</figcaption>
+						</figure>	
+						<p>On top of that, it had been tested using Responsive Design Mode provided by Mozilla Firefox to simulate different devices such as:</p>
+						<ul>
+							<li>Kindle Fire Fx</li>
+							<li>Samsung S9</li>
+							<li>iPhone 6/7/8</li>
+						</ul>
+						<figure>
+                          <img src="images/Kindle.png" alt="Screenshoot of the website on simulated Kindle Fire Fx." />
+                          <figcaption>Screenshoot of the website on simulated Kindle Fire Fx.</figcaption>
+						</figure>
+						<p>Live mobile testing had also been performed on:</p>
+						<ul>
+							<li>Samsung internet 8.2.01.2 (Mobile browser on Samsung Galaxy S6 – my personal phone).</li>
                         </ul>
                     </article>
                     <article>
-                        <h3>Disabled compatibility</h3>
-                        <p>Site had been designed taking into consideration possible disabled users. Things that were taken into account:</p>
-                        <ul>
-                            <li>High contrasting colours for links and text (used https://contrastchecker.com/) and all foreground/background ratios are over 11 (which is way bigger contrast than recommend 4.5:1 ratio).</li>
-                            <li>Non-colour indications of the position on the site using cursor, or changes made to the button or link when user hovers or clicks on them.</li>
-                            <li>Appropriate use of sections and articles (including headers) for ease of use screen readers.</li>
-                            <li>Skip links for the menu.</li>
-                            <li>Header of each page indicating where the user is.</li>
-                            <li>Big fonts and easy to read spacing (no justify that would change it and confuse reading software).</li>
+						<h3>Accessibility</h3>
+                        <p>The website has been designed with taking into consideration Web Content Accessibility Guidelines (<a href="https://www.w3.org/WAI/standards-guidelines/wcag/" aria-label="WCAG standard page">WCAG</a>). Things that had been taken into account:</p>                        
+						<ul>
+                            <li>High contrasting colours for links and text (used  <a href="https://contrastchecker.com/" aria-label="Contrast Checker">Contrast Checker</a>) and all foreground/background ratios are over 11 (which is higher than recommend ratio of 4.5:1).</li>
+                            <li>Non-colour indications of the position on the site using cursor, or changes made to the button or link when user hovers or clicks on them such as underlining the element or adding a border.</li>
+                            <li>Appropriate use of sections, articles and headers for ease of use screen readers (site had been tested with <a href="http://www.chromevox.com/" aria-label="ChromeVox page">ChromeVox</a> on Chromebook).</li>
+                            <li>Skip links throughout the site for the main navigation bar content.</li>
+                            <li>Use of headers on the top of each page to indicating where the user is.</li>
+                            <li>Appropriately sized fonts and easy to read spacing. To not confuse reading software there is no text justification performed on the text.</li>
+							<li>Overall readability of the page is good based on the results of the user testing. (Details about age and profession of each tester are available upon request. The consent from each tester had been obtained.)</li>
                         </ul>
-                        <p>Site had been tested using WAVE web accessibility evaluation tool.</p>
+                        <p>Live testing of the site had been done using <a href="https://wave.webaim.org/" aria-label="Web Accessibility Evaluation Tool page">WAVE</a>. Unfortunately, due to the CSS formatting used to create stars the tool has issues with picking up the background colours from the website. The contrast error is being returned for every text area on the page.</p>
+						<figure>
+							<img src="images/WaveResultsContrast.png" alt="Screenshoot of the website with WAVE contrast test results next to it." />
+							<figcaption>Screenshoot of the website with WAVE contrast test results next to it.</figcaption>
+						</figure>
+						<figure>
+							<img src="images/WaveResults.png" alt="Screenshoot of the website with WAVE style test results next to it." />
+							<figcaption>Screenshoot of the website with WAVE style test results next to it.</figcaption>
+						</figure>
+					</article>
+                    <article>
+                        <h3>Navigation</h3>
+                        <p>Given the size of the menu and that the site should be responsive and mobile friendly the main navigation is realised in the form of a horizontal (flexible) bar at the top of the page. This ensures that on each page the navigation menu will be displayed in the exact same place and will result in more space being available for the content on smaller screens.</p>
+						<p>The main navigation consists only of the web page main sections such as portfolio, contact or introduction/home page. As each section contain more specialised content, when necessary, internal navigation system had been provided. For example, portfolio main navigation links are redirecting a user to the sub-pages containing further links directing user to articles about specific positions. Its purpose is to provide more content space for additional information about each position e.g. whether project had been done for purpose of passing a course at university, had been based on personal interest, or maybe a date or technology it utilised. This allows the users to quickly browse though the available content to locate what is most relevant for them.</p>
+						<p>The minimalistic design of the page is reflected in the navigation to help create a less cluttered user experience.</p>
                     </article>
                     <article>
-                        <h3>Project Description Page</h3>
-                        <p>This page is describing the technologies used along with the tests that had been performed on the site to confirm that it is working up to specified standards.</p>
-                    </article>
-                    <article>
-                        <h3>MENU</h3>
-                        <p>
-                            Menu is in the form of a navigation bar at the top of the website. As I was not sure concerning how complex menu should be (the project specification was not clear on that point) I decided to create enough pages to demonstrate a 2 level solution: main menu on top of the pages and 2 sub-pages used for
-							listing of projects and publications that are used as sub-menus for those specific sections. For this website there was no need to create anything more complicated as it would have made the site unreadable.
-                        </p>
-                    </article>
-                    <article>
-                        <h3>Readability</h3>
-                        <p>The readability of the page is good. There is no non-readable content, too small or too big elements, poor contrast between elements etc.</p>
-                    </article>
-					<article>
-					<h3>Additional information</h3>
-                        <p>I am going to use this website as my personal portfolio as a developer thus I needed the contact form to work. As this is a static page (and I did not want to set up my own mail service/server) I used https://formspree.io/. It is a free service that forwards whatever is in the form to specified email address.</p>
+                        <h3>Contact Form</h3>
+                        <p>To ensure contact form is working without the set up of a mail service/server, contact form is using a  <a href="https://formspree.io/" aria-label="Formspree web page">Formspree</a>. It is a free service that forwards whatever is in the form to specified email address. The email received for my form looks like this:</p>
+						<figure>
+							<img src="images/ContactFormFilledIn.png" alt="Screenshoot of the filled in contact form on the website." />
+							<figcaption>Screenshoot of the filled in contact form on the website.</figcaption>
+						</figure>
+						<figure>
+							<img src="images/ContactFormEmail.png" alt="Screenshoot of the email with the information from the contact form." />
+							<figcaption>Screenshoot of the email with the information from the contact form.</figcaption>
+						</figure>
+						<p>To ensure that only appropriate data is sent via the contact form, client side validation has been used to help prevent spam. The validation includes requiring form specific answers such as email address needing an @ in the form field.</p>
 					</article>
                 </section>
             </div>
