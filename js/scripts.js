@@ -2,13 +2,8 @@
 {
 	if (navigator.cookieEnabled == true) 
 	{
-		alert("Cookies are enabled.");
 		checkCookie();
 	} 
-	else 
-	{
-		alert("Cookies are not enabled.");
-	}
 }
 
 function setCookie(cname)
