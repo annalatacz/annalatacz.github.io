@@ -11,20 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/all.css" />
 	<!-- JavaScript files -->
     <script type="text/javascript" src="js/scripts.js" ></script>
-	<!-- JQuery library reference -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Anna Latacz</title>
-	<script>
-		$(document).ready(function()
-		{   
-			setTimeout(function () {
-				$("#cookieConsent").fadeIn(10);
-			}, 200);
-		$("#closeCookieConsent, .cookieConsentOK").click(function() {
-			$("#cookieConsent").fadeOut(200);
-			}); 
-		}); 
-	</script>
 </head>
 <body onload="checkCookiesPermissions()">
     <div class="stars"></div>
@@ -81,12 +68,11 @@
 							Originally I was thinking about enhancing sky with the animation of the stars and/or gradient but during testing a few people mentioned that they got a bit "sea sick" so I dropped the idea.</li>
                         </ul>
                     </article><article>
-                        <h3>Cookies with JavaScript (including JQery)</h3>
+                        <h3>Cookies with JavaScript</h3>
                         <p>For the third technology used I choose cookies. The cookie is incorporated into this specific sub-page/section of the website as it is required only for the purpose of the assignemnt. 
 						I see no reason to store any information about visitors, and there is nothing here that would require storing of the information for ease of use (e.g. login details, shopping cart). As soon as the assinment is done it will be removed.</p>
 						<p>Currently, to illustrate the the cookie created is working as it should it was set up to expire within 3 minutes. Originally, the idea behind it was that the new visitors are greeted when coming to the site with a more personalised 
-						greeting but this may seem creepy to non-technical people - that is why it is limited only to this page.</p>
-						<p>The cookie banner is utilising JQery library.</p>
+						greeting but this may seem creepy so it is limited only to this page. The banner is visible only to new users (as long as there is no active cookie and there cookies are enabled).</p>
                     </article>
                 </section>
                 <section>
@@ -136,9 +122,9 @@
                 </section>
             </div>
         </div>
-		<div id="cookieConsent">
-			<div id="closeCookieConsent">x</div>
-			This website is using cookies to store the date of your last visit so that you can be greeted with a nice welcome. The information is stored for 3 minutes only. No other information is stored. If you want to disable cookies you need to change your web browser settings. <a class="cookieConsentOK">That's Fine</a>
+		<div id="cookieBanner">
+			<div onclick="hideBanner()" id="closeCookieBanner">x</div>
+			This website is using cookies to store the date of your last visit so that you can be greeted with a nice welcome. The information is stored for 3 minutes only. No other information is stored. If you want to disable cookies you need to change your web browser settings. <a onclick="hideBanner()" class="cookieConsentOK">That's Fine</a>
 		</div>
         <footer>
             <p>© 2019 Anna Latacz</p>

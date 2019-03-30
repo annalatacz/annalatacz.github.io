@@ -710,6 +710,11 @@ img {
 		overflow: visible;
 	}
 
+	body .fade-out {
+    opacity: 0;
+    transition: none;
+	}
+	
 	h1 {
 		font-size: 24pt;
 	}
@@ -735,7 +740,7 @@ img {
 }
 
 /* - - - - - - Cookie Consent - - - - - - - */
-#cookieConsent {
+#cookieBanner {
     background-color: rgba(20,20,20,0.9);
     min-height: 2em;
     font-size: 1em;
@@ -751,7 +756,7 @@ img {
     z-index: 9999;
 }
 
-#closeCookieConsent {
+#closeCookieBanner {
     float: right;
     display: inline-block;
     cursor: pointer;
@@ -760,10 +765,10 @@ img {
     margin: -15px 0 0 0;
     font-weight: bold;
 }
-#closeCookieConsent:hover {
+#closeCookieBanner:hover {
     color: #FFF;
 }
-#cookieConsent a.cookieConsentOK {
+#cookieBanner a.cookieConsentOK {
     background-color: #F1D600;
     color: #000;
     display: inline-block;
@@ -773,6 +778,6 @@ img {
     float: right;
     margin: 0 60px 0 10px;
 }
-#cookieConsent a.cookieConsentOK:hover {
+#cookieBanner a.cookieConsentOK:hover {
     background-color: #E0C91F;
 }

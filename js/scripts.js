@@ -6,6 +6,14 @@
 	} 
 }
 
+function showBanner() {
+	document.getElementById("cookieBanner").style.display ="block";
+}
+
+function hideBanner() {
+	document.getElementById("cookieBanner").style.display ="none";
+}
+
 function setCookie(cname)
 {
 	cname = "lastVisitDate";
@@ -48,6 +56,7 @@ function checkCookie()
 
 	if (date == "")
 	{
+		showBanner();
 		alert("Hello new Visitor!");
 	}
 	else
