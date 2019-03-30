@@ -7,11 +7,26 @@
     <meta name="description" content="About - Anna Latacz" />
     <meta name="keywords" content="Anna, Latacz, about page" />
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <!-- CSS script files -->
+        <!-- CSS script files -->
     <link rel="stylesheet" type="text/css" href="css/all.css" />
+	<!-- JavaScript files -->
+    <script type="text/javascript" src="js/scripts.js" ></script>
+	<!-- JQuery library reference -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Anna Latacz</title>
+	<script>
+		$(document).ready(function()
+		{   
+			setTimeout(function () {
+				$("#cookieConsent").fadeIn(200);
+			}, 4000);
+		$("#closeCookieConsent, .cookieConsentOK").click(function() {
+			$("#cookieConsent").fadeOut(200);
+			}); 
+		}); 
+	</script>
 </head>
-<body>
+<body onload="checkCookiesPermissions()">
     <div class="stars"></div>
     <header class="site-header">
         <div class="header-wrap">
@@ -117,6 +132,10 @@
                 </section>
             </div>
         </div>
+		<div id="cookieConsent">
+			<div id="closeCookieConsent">x</div>
+			This website is using cookies to store the date of your last visit so that you can be greeted with a nice welcome. The information is stored for 3 minutes only. No other information is stored.<a class="cookieConsentOK">That's Fine</a>
+		</div>
         <footer>
             <p>© 2019 Anna Latacz</p>
         </footer>
