@@ -83,6 +83,5 @@ function checkCookie()
 			alert("Welcome again! It's nice to see you after " + count + " days." ); //+ year +" "+ month +" "+ day+ " "+ year2 +" "+ month2 +" "+ day2+ " " +count);
 		}
 	}
-
 	setCookie("lastVisitDate");
 }
