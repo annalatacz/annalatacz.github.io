@@ -230,7 +230,6 @@ nav {
         margin: 0.2em;
 		border: solid;
 		border-color: transparent;
-        
     }
 
 /* Change the color of links on hover */
@@ -442,77 +441,6 @@ article {
     }
 }
 
-/*  - - - - - - - - PORTFOLIO - CONTENT
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-.portfolio {
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.projectTitle {
-    float: left;
-    width: 48%;
-    text-decoration: underline dashed;
-}
-
-.projectLastUpdated {
-    float: left;
-    width: 25%;
-    text-align: center;
-}
-
-.projectWorkFor {
-    float: left;
-    width: 25%;
-    text-align: center;
-}
-
-@media all and (max-width: 800px) {
-    .projectTitle {
-        width: 100%;
-    }
-
-    .projectLastUpdated {
-        width: 100%;
-    }
-
-    .projectWorkFor {
-        width: 100%;
-    }
-}
-
-/*  - - - - - - - - PUBLICATION - CONTENT
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-/*Formatting from Portfolio used given the similarify of the content*/
-
-/*  - - - - - - - - PROJECTS - CONTENT
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-.video {
-    padding: 0.1em;
-    text-align: left;
-}
-
-iframe{
-	width: auto;
-	height: auto;
-}
-
-pre, code {
-    font-family: monospace, monospace;
-}
-
-pre {
-    overflow: auto;
-}
-
-pre > code {
-    display: block;
-    padding: 1rem;
-    word-wrap: normal;
-}
-
 /*  - - - - - - - - CONTACT - CONTENT
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
@@ -591,19 +519,6 @@ fieldset{
         cursor: pointer;
         position: relative;
     }
-
-/*  - - - - - - - - BLOG - CONTENT
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-.signature {
-    text-align: right;
-    font-style: italic;
-}
-
-.blogPost {
-    text-align: left;
-    padding: 0.1em; /* Some padding */
-}
 
 /*  - - - - - - - - IMAGE, VIDEO - - - - - - - - - - - - - */
 img {
@@ -744,3 +659,38 @@ figure {
 #cookieBanner a.cookieConsentOK:hover {
     background-color: #E0C91F;
 }
+
+/* Resume - Work Experience Tabs to hide not relevant*/
+ /* Style the tab */
+.tab {
+    overflow: hidden;
+}
+  
+/* Style the buttons that are used to open the tab content */
+.tab a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.0em;
+    padding: 0.3em;
+    display: block;
+    margin: 0.2em;
+    border: solid;
+    border-color: transparent;
+}
+  
+/* Change background color of buttons on hover */
+.tab a:hover {
+    border-color: #FFFFFF;
+    text-decoration: underline;   
+}
+  
+/* Create an active/current tablink class */
+.tab a.active {
+    text-decoration: overline solid;
+}
+  
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    border-top: none;
+} 
