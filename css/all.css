@@ -1,5 +1,4 @@
-/*  - - - - - - - - MAIN BODY
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  - - - - - - - - MAIN BODY- - - - - - - - - - - - - - - - - - - - - */
 
 html {
     font-size: 100%; /* all font sizes and rems scale from here */
@@ -25,7 +24,8 @@ html {
     }
 }
 
-/* - - - - - - - - BACKGROUND & ANIMATION  - - - - - - - - - - - - -*/
+/* - - - - - - - - BACKGROUND & ANIMATION - - - - - - - - - - - - - - -*/
+
 @-webkit-keyframes html {
     0% {
         -webkit-transform: translate(5%, -2%);
@@ -153,8 +153,7 @@ p a {
     text-decoration: underline dashed;   
 }
 
-/*  - - - - - - - - HEADER
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - HEADER- - - - - - - - - - - - - - - - - - - - - - - */
 
 .site-title {
     font-style: italic;
@@ -199,8 +198,7 @@ p a {
     }
 }
 
-/*  - - - - - - - - TOP NAVIGATION BAR - MENU
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - TOP NAVIGATION BAR - MENU - - - - - - - - - - - - - */
 
 nav {
     text-align: center;
@@ -260,40 +258,38 @@ nav li {
 }
 
 
-/*  - - - - - - - - HOME PAGE CONTENT
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - HOME PAGE CONTENT - - - - - - - - - - - - - - - - - */
 .home {
     text-align: center;
     position: relative;
 }
 
-    .home ul {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		position: relative;
-    }
-	.home li {
-		display: inline-block;
-		border-bottom: 2px #FFFFFF dashed;
-		position:relative;
-	}
+.home ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.home li {
+    display: inline-block;
+    border-bottom: 2px #FFFFFF dashed;
+    position:relative;
+}
 
-    .home h1 {
-        font-size: 2em;
-        position: relative;
-    }
+.home h1 {
+    font-size: 2em;
+    position: relative;
+}
 
-    .home h2 {
-        font-size: 1.2em;
-        position: relative;
-    }
+.home h2 {
+    font-size: 1.2em;
+    position: relative;
+}
 
-/*  - - - - - - - - FOOTER CONTENT - Fixed to stay under the page content at the bottom
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* FOOTER CONTENT - Fixed to stay under the page content at the bottom */
 footer {
     color: #FFFFFF;
-    font-family: Verdana, sans-serif;
+    font-family: sans-serif;
     letter-spacing: -0.02em;
     padding: 0.1em;
     text-align: center;
@@ -303,15 +299,8 @@ footer {
     width: 100%;
 }
 
-/*  - - - - - - - - ABOUT PAGE CONTENT
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-.about {
-    text-align: left;
-}
 
-/*  - - - - - - - - RESUME PAGE CONTENT
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
+/*  - - - - - - - - RESUME PAGE CONTENT  - - - - - - - - - - - - - - - */
 
 /*  - - - - - - - - Button LINK  - - - - - - - - - - - - - */
 .button {
@@ -441,136 +430,6 @@ article {
     }
 }
 
-/*  - - - - - - - - CONTACT - CONTENT
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 1em; /* Some padding */
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 0.2em; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 0.2em; /* Add a top margin */
-    margin-bottom: 0.2em; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-input[type=email], select, textarea {
-    width: 100%; /* Full width */
-    padding: 1em; /* Some padding */
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 0.2em; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 0.2em; /* Add a top margin */
-    margin-bottom: 0.2em; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: transparent;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 0.3em;
-    font-size: 1em;
-    display: inline-block;
-    margin: 0.3em;
-    cursor: pointer;
-    border-bottom: dashed;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-}
-
-    /* When moving the mouse over the submit button, add a darker green color */
-    input[type=submit]:hover {
-        text-decoration: underline;
-        outline: solid;
-        position: relative;
-    }
-
-/* Add a background color and some padding around the form */
-.contact {
-    border-radius: 0.1em;
-    padding: 1em;
-}
-
-fieldset{
-	border: none;
-	padding: 0;
-	margin-bottom: 0.1em;
-}
-
-.button {
-    padding: 0.7em;
-    text-align: center;
-    font-size: 0.8em;
-    position: relative;
-}
-
-    .button a {
-        color: #FFFFFF;
-        text-decoration: underline dashed;
-        text-align: center;
-        padding: 0.3em 0.3em;
-        font-size: 1.0em;
-        display: inline-block;
-        cursor: pointer;
-        position: relative;
-    }
-
-/*  - - - - - - - - IMAGE, VIDEO - - - - - - - - - - - - - */
-img {
-    border: 0.1em;
-	border: solid;
-	border-color: #FFFFFF;
-    min-width: 40px;
-    min-height: 40px;
-	max-width:100%;
-	max-height:100%;
-}
-
-figure {
-	width: 100%;
-}
-
-@media all and (min-width: 602px) and (max-width: 800px) {
-    figure {
-        width: 100%;
-    }
-    
-    figcaption {
-        text-align: center;
-        width: 100%;
-    }
-}
-
-@media all and (max-width: 601px) {
-
-    figure {
-        width: 100%;
-    }
-
-    figcaption {
-        text-align: center;
-        width: 100%;
-    }
-}
-
-@media all and (max-width: 480px) {
-
-    figure {
-        width: 100%;
-    }
-
-    figcaption {
-        text-align: center;
-        width: 100%;
-    }
-}
-
-
 /* - - - - - - - - - - - - PRINT SETTINGS - - - - - - - - - - - - - */
 @media print {
     /* This media query only applies itself to the page during printing */
@@ -616,81 +475,3 @@ figure {
 		margin: 0 auto;
     }
 }
-
-/* - - - - - - Cookie Consent - - - - - - - */
-#cookieBanner {
-    background-color: rgba(20,20,20,0.9);
-    min-height: 2em;
-    font-size: 1em;
-    color: #ccc;
-    line-height: 2em;
-    padding: 8px 0 8px 30px;
-    font-family: Verdana, sans-serif;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: none;
-    z-index: 9999;
-}
-
-#closeCookieBanner {
-    float: right;
-    display: inline-block;
-    cursor: pointer;
-    height: 2em;
-    width: 2em;
-    margin: -15px 0 0 0;
-    font-weight: bold;
-}
-#closeCookieBanner:hover {
-    color: #FFFFFF;
-}
-#cookieBanner a.cookieConsentOK {
-    background-color: #F1D600;
-    color: #000;
-    display: inline-block;
-    border-radius: 5px;
-    padding: 0 20px;
-    cursor: pointer;
-    float: right;
-    margin: 0 60px 0 10px;
-}
-#cookieBanner a.cookieConsentOK:hover {
-    background-color: #E0C91F;
-}
-
-/* Resume - Work Experience Tabs to hide not relevant*/
- /* Style the tab */
-.tab {
-    overflow: hidden;
-}
-  
-/* Style the buttons that are used to open the tab content */
-.tab a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 1.0em;
-    padding: 0.3em;
-    display: block;
-    margin: 0.2em;
-    border: solid;
-    border-color: transparent;
-}
-  
-/* Change background color of buttons on hover */
-.tab a:hover {
-    border-color: #FFFFFF;
-    text-decoration: underline;   
-}
-  
-/* Create an active/current tablink class */
-.tab a.active {
-    text-decoration: overline solid;
-}
-  
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    border-top: none;
-} 
