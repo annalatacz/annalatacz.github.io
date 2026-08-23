@@ -6,19 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
         currentYear.textContent = new Date().getFullYear();
     }
 
-    function getYearsSince(startYear, startMonth) {
-        const startDate = new Date(startYear, startMonth);
-        const now = new Date();
-
-        let years = now.getFullYear() - startDate.getFullYear();
-
-        if (now.getMonth() < startDate.getMonth()) {
-            years--;
-        }
-
-        return years;
-    }
-
     const softwareYears = document.getElementById("softwareYears");
 
     if (softwareYears) {
@@ -32,3 +19,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
+
+function getYearsSince(startYear, startMonth) {
+    const startDate = new Date(startYear, startMonth);
+    const now = new Date();
+
+    let years = now.getFullYear() - startDate.getFullYear();
+
+    if (now.getMonth() < startDate.getMonth()) {
+        years--;
+    }
+
+    return years;
+}
