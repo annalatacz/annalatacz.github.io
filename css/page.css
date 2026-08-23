@@ -11,6 +11,9 @@ html {
 }
 
 body {
+    display: grid;
+    grid-template-rows: 10%, 1fr, 5%;
+    grid-template-columns: 1fr, 1fr, 1fr;
 	margin: 0;
 	font-family: Arial, sans-serif;
 	line-height: 1.6;
@@ -43,6 +46,7 @@ a {
    ================================ */
 
 .site-header {
+    grid-row: 1;
 	position: sticky;
 	top: 0;
 	z-index: 100;
@@ -61,13 +65,20 @@ a {
 }
 
 .site-nav-link {
-	text-decoration: none;
+	text-decoration: underline overline;
 }
 
-.site-nav-link:hover,
+.site-nav-link:hover{
+    text-decoration: underline overline;
+}
+
 .site-nav-link:focus,
 .site-nav-link.active {
-	text-decoration: underline;
+	text-decoration: underline dashed;
+}
+
+.site-nav-link:visited {
+	text-decoration: underline solid;
 }
 
 
@@ -88,14 +99,13 @@ main {
 	align-items: center;
 	padding: 4rem 2rem;
 	text-align: center;
+	background: #ffffff15;
 }
 
-.introduction h1 {
+.introduction h1,
+.introduction h2,
+.introduction h3{
 	margin-bottom: 0.25rem;
-}
-
-.introduction h2 {
-	margin-top: 0;
 }
 
 
@@ -145,7 +155,36 @@ main {
 .section-content {
 	max-width: 900px;
 }
+/* ================================
+   STRENGTHS / MAIN SKILLS
+   ================================ */
 
+.strengths,
+.main-skills,
+.backend-skills,
+.frontend-skills,
+.testing-skills,
+.tool-skills {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: stretch;
+	gap: 0.75rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.strengths li,
+.main-skills li,
+.backend-skills li,
+.frontend-skills li,
+.testing-skills li,
+.tool-skills li {
+	padding: 0.5rem 1rem;
+	background: #ffffff15;
+	border-radius: 4px;
+}
 
 /* ================================
    LANGUAGE SKILLS / EDUCATION LIST
