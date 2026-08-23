@@ -8,82 +8,104 @@
 	<meta name="keywords" content="Anna, Latacz, CV, Resume" />
 	<title>Anna Latacz</title>
 	<!-- CSS -->
-	<link href="./css/all.css" rel="stylesheet" />
+	<link href="./css/stars.css" rel="stylesheet" />
+	<link href="./css/page.css" rel="stylesheet" />
 	<!-- JavaScript -->
 	<script src="./js/script.js" defer></script>
-	<script src="https://kit.fontawesome.com/9ad9cc41e8.js"
-	        crossorigin="anonymous"></script>
+	<script
+			src="https://kit.fontawesome.com/9ad9cc41e8.js"
+			crossorigin="anonymous">
+	</script>
 </head>
 <body class="fullpage">
+
 <div class="stars"></div>
+<!-- HEADER / MAIN NAVIGATION -->
 <header class="site-header">
-	<a class="skip-link" href="#introduction">Skip navigation</a>
-	<nav>
-		<ul>
-			<li>
-				<a class="active" href="#introduction">Home</a>
+	<a class="skip-link" href="#introduction">
+		Skip navigation
+	</a>
+	<nav class="site-nav" aria-label="Main navigation">
+		<ul class="site-nav-list">
+			<li class="site-nav-item">
+				<a class="site-nav-link active" href="#introduction" aria-current="page">
+					Home
+				</a>
 			</li>
-			<li>
-				<a href="#resume">Personal Statement</a>
+			<li class="site-nav-item">
+				<a class="site-nav-link" href="#personalStatement">
+					Personal Statement
+				</a>
 			</li>
-			<li>
-				<a href="#keyTechnologies">Technologies</a>
+			<li class="site-nav-item">
+				<a class="site-nav-link" href="#keyTechnologies">
+					Technologies
+				</a>
 			</li>
-			<li>
-				<a href="#keySoftware">Software</a>
+			<li class="site-nav-item">
+				<a class="site-nav-link" href="#keySoftware">
+					Software
+				</a>
 			</li>
-			<li>
-				<a href="#personalSkills">Skills</a>
+			<li class="site-nav-item">
+				<a class="site-nav-link" href="#personalSkills">
+					Skills
+				</a>
 			</li>
-			<li>
-				<a href="#workExperience">Experience</a>
+			<li class="site-nav-item">
+				<a class="site-nav-link" href="#workExperience">
+					Experience
+				</a>
 			</li>
-			<li>
-				<a href="#education">Education</a>
+			<li class="site-nav-item">
+				<a class="site-nav-link" href="#education">
+					Education
+				</a>
 			</li>
-			<li>
-				<a href="#additionalSkills">Additional Skills</a>
+			<li class="site-nav-item">
+				<a class="site-nav-link" href="#languages">
+					Languages
+				</a>
 			</li>
 		</ul>
 	</nav>
 </header>
+<!-- MAIN CONTENT -->
 <main id="main">
 	<!-- HOME -->
 	<section id="introduction" class="introduction">
-		<div class="home">
-			<h1>Anna Latacz</h1>
-			<h2>Full Stack Developer</h2>
-			<p>
-				Welcome! I'm a customer oriented and versatile developer
-				that loves challenges.
-			</p>
-			<ul>
-				<li>
-					<a href="https://www.linkedin.com/in/anna-latacz-827123a1/"
-					   target="_blank"
-					   rel="noopener noreferrer"
-					   aria-label="LinkedIn">
-						<i class="fa-brands fa-linkedin"></i>
-					</a>
-				</li>
-				<li>
-					<a href="mailto:ann.latacz@gmail.com"
-					   aria-label="Email">
-						<i class="fa-solid fa-envelope"></i>
-					</a>
-				</li>
-			</ul>
-		</div>
+		<h1>Anna Latacz</h1>
+		<h2>Full Stack Developer</h2>
+		<p>
+			Welcome! I'm a customer oriented and versatile developer
+			that loves challenges.
+		</p>
+		<ul class="social-links">
+			<li class="social-links-item">
+				<a class="social-link" href="https://www.linkedin.com/in/anna-latacz-827123a1/"
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="LinkedIn">
+					<i class="fa-brands fa-linkedin"></i>
+				</a>
+			</li>
+			<li class="social-links-item">
+				<a class="social-link" href="mailto:ann.latacz@gmail.com"
+						aria-label="Email">
+					<i class="fa-solid fa-envelope"></i>
+				</a>
+			</li>
+		</ul>
 	</section>
 	<!-- RESUME -->
-	<div id="resume">
+	<div id="resume" class="resume">
 		<h1 class="resume-title">Resume</h1>
 		<!-- PERSONAL STATEMENT -->
 		<section id="personalStatement" class="resume-section">
-			<div class="sectionTitle">
+			<div class="section-title">
 				<h2>Personal statement</h2>
 			</div>
-			<div class="sectionContent">
+			<div class="section-content">
 				<p>
 					I’m a highly focused full-stack software developer
 					with extensive experience in the overall development
@@ -102,12 +124,15 @@
 			</div>
 		</section>
 		<!-- KEY TECHNOLOGIES -->
-		<section id="keyTechnologies" class="resume-section panel" data-color="violet">
-			<div class="sectionTitle">
+		<section
+				id="keyTechnologies"
+				class="resume-section panel"
+				data-color="violet">
+			<div class="section-title">
 				<h2>Key Technologies</h2>
 			</div>
-			<div class="sectionContent">
-				<ul class="keySkills">
+			<div class="section-content">
+				<ul class="key-skills">
 					<li>Java 6–25</li>
 					<li>JavaScript, Ajax, jQuery, Svelte</li>
 					<li>REST APIs, SOAP APIs</li>
@@ -119,12 +144,15 @@
 			</div>
 		</section>
 		<!-- KEY SOFTWARE -->
-		<section id="keySoftware" class="resume-section panel" data-color="indigo">
-			<div class="sectionTitle">
+		<section
+				id="keySoftware"
+				class="resume-section panel"
+				data-color="indigo">
+			<div class="section-title">
 				<h2>Key Software</h2>
 			</div>
-			<div class="sectionContent">
-				<ul class="keySkills">
+			<div class="section-content">
+				<ul class="key-skills">
 					<li>IntelliJ, Eclipse, VS Code</li>
 					<li>JIRA</li>
 					<li>Maven/Gradle</li>
@@ -140,10 +168,10 @@
 		</section>
 		<!-- PERSONAL SKILLS -->
 		<section id="personalSkills" class="resume-section">
-			<div class="sectionTitle">
+			<div class="section-title">
 				<h2>Personal skills</h2>
 			</div>
-			<div class="sectionContent">
+			<div class="section-content">
 				<p>
 					Proven ability to multi-task on multiple issues and
 					projects at the same time.
@@ -174,40 +202,57 @@
 		</section>
 		<!-- WORK EXPERIENCE -->
 		<section id="workExperience" class="resume-section">
-			<div class="sectionTitle">
+			<div class="section-title">
 				<h2>Work Experience</h2>
 				<!-- EXPERIENCE SUBSECTION LINKS -->
-				<nav class="experience-nav" aria-label="Work experience">
-					<ul>
-						<li>
-							<a href="#Programming">Full-Stack Developer</a>
+				<nav
+						class="experience-nav"
+						aria-label="Work experience">
+					<ul class="experience-nav-list">
+						<li class="experience-nav-item">
+							<a
+									class="experience-nav-link"
+									href="#programming">
+								Full-Stack Developer
+							</a>
 						</li>
-						<li>
-							<a href="#Testing">QA / Tester</a>
+						<li class="experience-nav-item">
+							<a
+									class="experience-nav-link"
+									href="#testing">
+								QA / Tester
+							</a>
 						</li>
-						<li>
-							<a href="#Support">Product Support</a>
+						<li class="experience-nav-item">
+							<a
+									class="experience-nav-link"
+									href="#support">
+								Product Support
+							</a>
 						</li>
 					</ul>
 				</nav>
 			</div>
-			<div class="sectionContent">
+			<div class="section-content">
 				<!-- ========================================= -->
 				<!-- PROGRAMMING / FULL-STACK DEVELOPMENT      -->
 				<!-- ========================================= -->
-				<div id="Programming" class="tabcontent">
+				<div id="programming" class="tab-content">
 					<!-- CURRENT ROLE -->
-					<article>
-						<h3>Software Developer (Full-Stack Developer)</h3>
-						<p class="subDetails">
-							<a href="https://www.linkedin.com/company/2429162/"
-							   target="_blank"
-							   rel="noopener noreferrer">
+					<article class="job">
+						<h3>
+							Software Developer (Full-Stack Developer)
+						</h3>
+						<p class="job-details">
+							<a
+									href="https://www.linkedin.com/company/2429162/"
+									target="_blank"
+									rel="noopener noreferrer">
 								Cimteq by UL Solutions
 							</a>
 							· Full-time · Jul 2024 – Present
 						</p>
-						<p class="subDetails">
+						<p class="job-details">
 							Warrington, England, United Kingdom · Remote
 						</p>
 						<p>
@@ -269,20 +314,21 @@
 						</p>
 					</article>
 					<!-- PREVIOUS ROLE -->
-					<article>
+					<article class="job">
 						<h3>
 							Application Support Developer
 							(Jr Full-Stack Developer)
 						</h3>
-						<p class="subDetails">
-							<a href="https://www.linkedin.com/company/2429162/"
-							   target="_blank"
-							   rel="noopener noreferrer">
+						<p class="job-details">
+							<a
+									href="https://www.linkedin.com/company/2429162/"
+									target="_blank"
+									rel="noopener noreferrer">
 								Cimteq by UL Solutions
 							</a>
 							· Full-time · Oct 2019 – Jun 2021
 						</p>
-						<p class="subDetails">
+						<p class="job-details">
 							Wrexham, Wales, United Kingdom
 						</p>
 						<p>
@@ -318,10 +364,10 @@
 				<!-- ========================================= -->
 				<!-- TESTING / QA                              -->
 				<!-- ========================================= -->
-				<div id="Testing" class="tabcontent">
-					<article>
+				<div id="testing" class="tab-content">
+					<article class="job">
 						<h3>Test Analyst (Test Automation Engineer)</h3>
-						<p class="subDetails">
+						<p class="job-details">
 							Moneypenny, Wrexham, Wales,
 							Jul 2018 – Nov 2018
 						</p>
@@ -348,9 +394,9 @@
 							and IntelliJ.
 						</p>
 					</article>
-					<article>
+					<article class="job">
 						<h3>Software Tester</h3>
-						<p class="subDetails">
+						<p class="job-details">
 							GBG PLC, Chester, England,
 							Oct 2015 – Jun 2018
 						</p>
@@ -387,10 +433,10 @@
 				<!-- ========================================= -->
 				<!-- PRODUCT SUPPORT                           -->
 				<!-- ========================================= -->
-				<div id="Support" class="tabcontent">
-					<article>
+				<div id="support" class="tab-content">
+					<article class="job">
 						<h3>Product Support Specialist</h3>
-						<p class="subDetails">
+						<p class="job-details">
 							GBG PLC, Chester, England,
 							Nov 2014 – Oct 2015
 						</p>
@@ -430,68 +476,66 @@
 		</section>
 		<!-- EDUCATION -->
 		<section id="education" class="resume-section">
-			<div class="sectionTitle">
+			<div class="section-title">
 				<h2>Education</h2>
 			</div>
-			<div class="sectionContent">
-				<article>
-					<p>
-						<i>Completed Taught Modules for MSc in
-							Online Management Support Systems</i>,
-						Warsaw University of Technology,
-						2015–2019
-					</p>
-				</article>
-				<article>
-					<p>
-						<i>Bachelor of Science (BSc) Information Technology</i>,
-						Technical University of Lodz,
-						2009–2015
-					</p>
-				</article>
-				<article>
-					<p>
-						<i>Bachelor of Science (BSc) Creative Media Computing</i>
-						– 1st classification,
-						Wrexham University
-						(previously Glyndwr University),
-						2011–2013
-					</p>
-				</article>
-				<article>
-					<p>
-						<i>ISTQB® – BCS Certified Tester Foundation Level</i>
-						– Chester, 14 Dec 2016
-					</p>
-				</article>
+			<div class="section-content">
+				<ul class="skills">
+					<li>
+						<p>
+							<i>Completed Taught Modules for MSc in
+								Online Management Support Systems</i>,
+							Warsaw University of Technology,
+							2015–2019
+						</p>
+					</li>
+					<li>
+						<p>
+							<i>Bachelor of Science (BSc) Information Technology</i>,
+							Technical University of Lodz,
+							2009–2015
+						</p>
+					</li>
+					<li>
+						<p>
+							<i>Bachelor of Science (BSc) Creative Media Computing</i>
+							– 1st classification,
+							Wrexham University
+							(previously Glyndwr University),
+							2011–2013
+						</p>
+					</li>
+					<li>
+						<p>
+							<i>ISTQB® – BCS Certified Tester Foundation Level</i>
+							– Chester, 14 Dec 2016
+						</p>
+					</li>
+				</ul>
 			</div>
 		</section>
-		<!-- ADDITIONAL SKILLS -->
-		<section id="additionalSkills" class="resume-section">
-			<div class="sectionTitle">
-				<h2>Additional skills</h2>
+		<!-- LANGUAGES -->
+		<section id="languages" class="resume-section">
+			<div class="section-title">
+				<h2>Languages</h2>
 			</div>
-			<div class="sectionContent">
-				<article>
-					<h3>Languages</h3>
-					<p>
-						Polish – native language
-					</p>
-					<p>
-						English – fluent (speaking, reading, writing) C1
-					</p>
-					<p>
-						Italian – beginner (speaking, reading, writing) A2
-					</p>
-				</article>
+			<div class="section-content">
+				<ul class="skills">
+					<li>Polish – native language</li>
+					<li>English – fluent (speaking, reading, writing) C1</li>
+					<li>Italian – beginner (speaking, reading, writing) A2</li>
+					<li>Welsh – beginner (speaking, reading, writing) A1</li>
+				</ul>
 			</div>
 		</section>
 	</div>
 </main>
-<footer>
+<!-- FOOTER -->
+<footer class="site-footer">
 	<p>
 		&copy; <span id="currentYear"></span> Anna Latacz
 	</p>
 </footer>
+
 </body>
 </html>

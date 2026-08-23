@@ -1,0 +1,268 @@
+/* ================================
+   RESET / BASE
+   ================================ */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	color: #ffffff;
+	background: #000033;
+}
+
+a {
+	color: inherit;
+}
+
+/* ================================
+   SKIP LINK
+   ================================ */
+
+.skip-link {
+	position: absolute;
+	left: -9999px;
+}
+
+.skip-link:focus {
+	left: 1rem;
+	top: 1rem;
+	z-index: 1000;
+}
+
+
+/* ================================
+   HEADER / NAVIGATION
+   ================================ */
+
+.site-header {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	padding: 1rem;
+}
+
+.site-nav-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem 1.5rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	/*background: #ffffff15;*/
+}
+
+.site-nav-link {
+	text-decoration: none;
+}
+
+.site-nav-link:hover,
+.site-nav-link:focus,
+.site-nav-link.active {
+	text-decoration: underline;
+}
+
+
+/* ================================
+   MAIN / INTRODUCTION
+   ================================ */
+
+main {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.introduction {
+	min-height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 4rem 2rem;
+	text-align: center;
+}
+
+.introduction h1 {
+	margin-bottom: 0.25rem;
+}
+
+.introduction h2 {
+	margin-top: 0;
+}
+
+
+/* ================================
+   SOCIAL LINKS
+   ================================ */
+
+.social-links {
+	display: flex;
+	gap: 1rem;
+	margin: 1.5rem 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+.social-link {
+	font-size: 2rem;
+	text-decoration: none;
+}
+
+
+/* ================================
+   RESUME
+   ================================ */
+
+.resume {
+	padding: 2rem;
+}
+
+.resume-title {
+	text-align: center;
+}
+
+.resume-section {
+	padding: 3rem 0;
+	border-bottom: 1px solid #ffffff33;
+}
+
+.section-title {
+	margin-bottom: 1.5rem;
+}
+
+.section-title h2 {
+	margin: 0;
+}
+
+.section-content {
+	max-width: 900px;
+}
+
+
+/* ================================
+   LANGUAGE SKILLS / EDUCATION LIST
+   ================================ */
+
+.skills {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.skills li {
+	padding: 0.5rem 1rem;
+	background: #ffffff15;
+	border-radius: 4px;
+}
+
+
+/* ================================
+   WORK EXPERIENCE NAV
+   ================================ */
+
+.experience-nav-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin: 1rem 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+.experience-nav-link {
+	text-decoration: none;
+}
+
+.experience-nav-link:hover,
+.experience-nav-link:focus {
+	text-decoration: underline;
+}
+
+
+/* ================================
+   JOBS
+   ================================ */
+
+.job {
+	padding: 2rem 0;
+	border-bottom: 1px solid #ffffff22;
+}
+
+.job:first-child {
+	padding-top: 0;
+}
+
+.job:last-child {
+	border-bottom: 0;
+}
+
+.job h3 {
+	margin-top: 0;
+}
+
+.job-details {
+	color: #cccccc;
+	font-size: 0.9rem;
+}
+
+
+/* ================================
+   EDUCATION
+   ================================ */
+
+.education-item {
+	padding: 1rem 0;
+}
+
+.education-item p {
+	margin: 0;
+}
+
+
+/* ================================
+   FOOTER
+   ================================ */
+
+.site-footer {
+	padding: 2rem;
+	text-align: center;
+}
+
+/* ================================
+   RESPONSIVE
+   ================================ */
+
+@media (max-width: 600px) {
+
+	.site-nav-list {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.resume {
+		padding: 1rem;
+	}
+
+	.introduction {
+		padding: 3rem 1rem;
+	}
+}
+
+@media (max-width: 300px) {
+
+	.site-nav-list {
+		flex-direction: column;
+		align-items: center;
+	}
+}
