@@ -1,5 +1,5 @@
 /* =========================================================
-RANDOM STARFIELD
+STARFIELD
 ========================================================= */
 
 .stars {
@@ -29,10 +29,8 @@ z-index: 0;
 
 /*
  * The animation is intentionally VERY slow.
- *
- * 2000 seconds = approximately 33 minutes per cycle.
  */
-animation: star-drift 2000s ease-in-out infinite;
+animation: star-drift 1000s linear infinite;
 
 /*
  * Prevent the browser from painting the element's
