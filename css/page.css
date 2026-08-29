@@ -61,7 +61,6 @@ a {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	/*background: #ffffff15;*/
 }
 
 .site-nav-link {
@@ -90,7 +89,7 @@ main {
 	max-width: 1200px;
 	margin: 0 auto;
 }
-
+/*
 .introduction {
 	min-height: 80vh;
 	display: flex;
@@ -107,12 +106,12 @@ main {
 .introduction h3{
 	margin-bottom: 0.25rem;
 }
-
+*/
 
 /* ================================
    SOCIAL LINKS
    ================================ */
-
+/*
 .social-links {
 	display: flex;
 	gap: 1rem;
@@ -124,13 +123,13 @@ main {
 .social-link {
 	font-size: 2rem;
 	text-decoration: none;
-}
+}*/
 
 
 /* ================================
    RESUME
    ================================ */
-
+/*
 .resume {
 	padding: 2rem;
 }
@@ -154,11 +153,12 @@ main {
 
 .section-content {
 	max-width: 900px;
-}
+}*/
+
 /* ================================
    STRENGTHS / MAIN SKILLS
    ================================ */
-
+/*
 .strengths,
 .main-skills,
 .backend-skills,
@@ -184,12 +184,12 @@ main {
 	padding: 0.5rem 1rem;
 	background: #ffffff15;
 	border-radius: 4px;
-}
+}*/
 
 /* ================================
    LANGUAGE SKILLS / EDUCATION LIST
    ================================ */
-
+/*
 .skills {
 	display: flex;
 	flex-direction: column;
@@ -203,13 +203,13 @@ main {
 	padding: 0.5rem 1rem;
 	background: #ffffff15;
 	border-radius: 4px;
-}
+}*/
 
 
 /* ================================
    WORK EXPERIENCE NAV
    ================================ */
-
+/*
 .experience-nav-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -227,12 +227,12 @@ main {
 .experience-nav-link:focus {
 	text-decoration: underline;
 }
-
+*/
 
 /* ================================
    JOBS
    ================================ */
-
+/*
 .job {
 	padding: 2rem 0;
 	border-bottom: 1px solid #ffffff22;
@@ -254,12 +254,12 @@ main {
 	color: #cccccc;
 	font-size: 0.9rem;
 }
-
+*/
 
 /* ================================
    EDUCATION
    ================================ */
-
+/*
 .education-item {
 	padding: 1rem 0;
 }
@@ -267,7 +267,7 @@ main {
 .education-item p {
 	margin: 0;
 }
-
+*/
 
 /* ================================
    FOOTER
